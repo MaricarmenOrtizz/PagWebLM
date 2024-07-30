@@ -31,69 +31,102 @@ function showSedeInfo(regionName) {
   `;
 }
 
-regionLimaMetropolitana.addEventListener("mouseover", () => {
-  regionLimaMetropolitana.style.fill = "#3cb37283";
-  regionLimaProvincia.style.fill = "#3cb37283";
-  sedeContainer.style.display = "block";
+function setContainerStyle(region, backgroundColor, display){
+  region.style.fill = backgroundColor;
+  sedeContainer.style.display = display;
+}
 
+regionLimaMetropolitana.addEventListener("mouseover", () => {
+  setContainerStyle(regionLimaMetropolitana,"#3cb37283", "block");
+  setContainerStyle(regionLimaProvincia,"#3cb37283", "block");
   showSedeInfo('Lima');
 });
 
 regionLimaMetropolitana.addEventListener("mouseleave", () => {
-  regionLimaMetropolitana.style.fill = "#dbdbdb88";
-  regionLimaProvincia.style.fill = "#dbdbdb88";
-  sedeContainer.style.display = "none";
+  setContainerStyle(regionLimaMetropolitana,"#dbdbdb88", "none");
+  setContainerStyle(regionLimaProvincia,"#dbdbdb88", "none");
 });
 
 regionLimaProvincia.addEventListener("mouseover", () => {
-  regionLimaMetropolitana.style.fill = "#3cb37283";
-  regionLimaProvincia.style.fill = "#3cb37283";
-  sedeContainer.style.display = "block";
-
+  setContainerStyle(regionLimaMetropolitana,"#3cb37283", "block");
+  setContainerStyle(regionLimaProvincia,"#3cb37283", "block");
   showSedeInfo('Lima');
 });
 
 regionLimaProvincia.addEventListener("mouseleave", () => {
-  regionLimaMetropolitana.style.fill = "#dbdbdb88";
-  regionLimaProvincia.style.fill = "#dbdbdb88";
-  sedeContainer.style.display = "none";
+  setContainerStyle(regionLimaMetropolitana,"#dbdbdb88", "none");
+  setContainerStyle(regionLimaProvincia,"#dbdbdb88", "none");
 });
 
 /*---ICA---*/
 regionIca.addEventListener("mouseover", () => {
-  regionIca.style.fill = "#3cb37283";
-  sedeContainer.style.display = "block";
-
+  setContainerStyle(regionIca,"#3cb37283", "block");
   showSedeInfo('Ica');
 });
 
 regionIca.addEventListener("mouseleave", () => {
-  regionIca.style.fill = "#dbdbdb88";
-  sedeContainer.style.display = "none";
+  setContainerStyle(regionIca,"#dbdbdb88", "none");
 });
 
 /*---TRUJILLO---*/
 regionLaLibertad.addEventListener("mouseover", () => {
-  regionLaLibertad.style.fill = "#3cb37283";
-  sedeContainer.style.display = "block";
-
+  setContainerStyle(regionLaLibertad,"#3cb37283", "block");
   showSedeInfo('Trujillo');
 });
 
 regionLaLibertad.addEventListener("mouseleave", () => {
-  regionLaLibertad.style.fill = "#dbdbdb88";
-  sedeContainer.style.display = "none";
+  setContainerStyle(regionLaLibertad,"#dbdbdb88", "none");
 });
 
 /*---CHICLAYO---*/
 regionLambayeque.addEventListener("mouseover", () => {
-  regionLambayeque.style.fill = "#3cb37283";
-  sedeContainer.style.display = "block";
-
+  setContainerStyle(regionLambayeque,"#3cb37283", "block");
   showSedeInfo('Chiclayo');
 });
 
 regionLambayeque.addEventListener("mouseleave", () => {
-  regionLambayeque.style.fill = "#dbdbdb88";
-  sedeContainer.style.display = "none";
+  setContainerStyle(regionLambayeque,"#dbdbdb88", "none");
+});
+
+/*---PIN---*/
+
+pinLima.addEventListener("mouseover", () => {
+  setContainerStyle(regionLimaMetropolitana,"#3cb37283", "block");
+  setContainerStyle(regionLimaProvincia,"#3cb37283", "block");
+  showSedeInfo('Lima');
+});
+
+pinLima.addEventListener("mouseleave", () => {
+  setContainerStyle(regionLimaMetropolitana,"#dbdbdb88", "none");
+  setContainerStyle(regionLimaProvincia,"#dbdbdb88", "none");
+});
+
+/*---ICA---*/
+pinIca.addEventListener("mouseover", () => {
+  setContainerStyle(regionIca,"#3cb37283", "block");
+  showSedeInfo('Ica');
+});
+
+pinIca.addEventListener("mouseleave", () => {
+  setContainerStyle(regionIca,"#dbdbdb88", "none");
+});
+
+/*---TRUJILLO---*/
+pinTrujillo.addEventListener("mouseover", () => {
+  setContainerStyle(regionLaLibertad,"#3cb37283", "block");
+  showSedeInfo('Trujillo');
+});
+
+pinTrujillo.addEventListener("mouseleave", () => {
+  setContainerStyle(regionLaLibertad,"#dbdbdb88", "none");
+});
+
+/*---CHICLAYO---*/
+pinChiclayo.addEventListener("mouseover", () => {
+  setContainerStyle(regionLambayeque,"#3cb37283", "block");
+  showSedeInfo('Chiclayo');
+});
+
+pinChiclayo.addEventListener("mouseleave", () => {
+  setContainerStyle(regionLambayeque,"#dbdbdb88", "none");
 });

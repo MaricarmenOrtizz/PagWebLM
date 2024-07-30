@@ -9,6 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Inicio</title>
@@ -64,11 +71,13 @@
               src="./img/claro-servicio.jpg"
               alt="Logo"
             />
-            <h3>Claro</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque culpa porro soluta ea.
-            </p>
+            <div class="service-content">
+              <h3>Claro</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque culpa porro soluta ea.
+              </p>
+            </div>
           </div>
           <div class="service">
             <img
@@ -76,11 +85,13 @@
               src="./img/servicio-niubiz.png"
               alt="Logo"
             />
-            <h3>Niubiz</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque culpa porro soluta ea.
-            </p>
+            <div class="service-content">
+              <h3>Niubiz</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque culpa porro soluta ea.
+              </p>
+            </div>
           </div>
           <div class="service">
             <img
@@ -88,11 +99,13 @@
               src="./img/prosegur-service.jpg"
               alt="Logo"
             />
-            <h3>Prosegur Alarmas</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque culpa porro soluta ea.
-            </p>
+            <div class="service-content">
+              <h3>Prosegur Alarmas</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque culpa porro soluta ea.
+              </p>
+            </div>
           </div>
         </div>
         <button class="btn">Saber más</button>
@@ -100,7 +113,7 @@
 
       <section class="aboutUs">
         <div class="about-us-content">
-          <h3>Nosotros</h3>
+          <h2>Nosotros</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim natus
             accusantium modi, adipisci velit neque et rem, distinctio ratione,
@@ -108,9 +121,8 @@
             architecto iusto!
           </p>
           <button class="btn">Conocenos</button>
-          </div>
+        </div>
         <img src="./img/about-us.png" alt="Logo" />
-
       </section>
       <section class="sedesLozamora">
         <p class="sedes-titulo">
@@ -130,7 +142,7 @@
             id="svg2"
             width="400"
             height="500"
-            viewBox = "0 0 600 800"
+            viewBox="0 0 600 800"
           >
             <path
               id="PE-AMA"
@@ -274,10 +286,7 @@
           <div class="pin" id="P-CHICLAYO"></div>
         </div>
         <div class="sede-container" id="info-sede-container">
-          <img
-            id="sede-img"
-            alt="Logo"
-          />
+          <img id="sede-img" alt="Logo" />
           <div class="sede-content">
             <h3>Region Nombre</h3>
             <p>
@@ -288,29 +297,85 @@
         </div>
       </section>
       <section class="hiring">
-       <div class="shadow-hiring">
-         
-          <h1>¿Quieres ser parte de esta gran familia?</h1>
+        <div class="shadow-hiring">
           <div class="hiring-content">
-            <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nostrum
-              nulla aliquam saepe sunt excepturi sequi.
-            </h1>
-            <button class="vacantes" type="button">Vacantes</button>
+            <h1>¿Quieres ser parte de esta gran familia?</h1>
+            <div class="hiring-content-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aha
+                nostrum nulla aliquam saepe sunt excepturi sequi.
+              </p>
+              <div class="btn-vacantes">
+                <button class="vacantes" type="button">Vacantes</button>
+              </div>
+            </div>
           </div>
-       </div>
+        </div>
       </section>
     </main>
     <footer>
-      <img src="./img/Isotipo_VN.png" alt="isotipo" />
-      <p>Teléfono</p>
-      <p>999 888 555</p>
-      <p>Correo</p>
-      <p>correo_glm@grupolozamora.com.pe</p>
-      <p>Direccion</p>
-      <p>Av. Republica de Panama 3135, San Isidro , Lima 15047</p>
+      <figure class="footer-icon">
+        <img src="./img/isotipoVB.png" alt="isotipo" />
+      </figure>
+      <ul class="footer-content">
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <div class="footer-list-text">
+            <h4>Teléfono</h4>
+            <a href="tel:+51999 888 555">999 888 555</a>
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <div class="footer-list-text">
+            <h4>Correo</h4>
+            <a href="mailto:correo_glm@grupolozamora.com.pe"
+              >correo_glm@grupolozamora.com.pe</a
+            >
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="footer-list-text">
+            <h4>Direccion</h4>
+            <a href="https://maps.app.goo.gl/r9MQpgQE6sLkyDZEA" target="_blank"
+              >Av. Republica de Panama 3135, San Isidro , Lima 15047</a
+            >
+          </div>
+        </li>
+      </ul>
 
-      <h3>Todos los derechos reservados | Lozamora 2024 ©</h3>
+      <div class="footer-copyright">
+        <p class="footer-copyright-text">
+          Todos los derechos reservados | Lozamora 2024 ©
+        </p>
+        <ul class="social-media">
+          <li>
+            <a
+              href="https://www.linkedin.com/company/grupo-lozamora/mycompany/?viewAsMember=true"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=61551548215123&locale=es_LA"
+              target="_blank"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/grupolozamora/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@grupolozamora" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
     <script src="./js/utils/navStyle.js"></script>

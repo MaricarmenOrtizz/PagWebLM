@@ -67,20 +67,20 @@ header nav .menu .menu-item .menu-item-link.active {
   height: 100%;
 }
 
-@keyframes banner-index{
-  0%{
+@keyframes banner-index {
+  0% {
     background-image: url("/img/aboutUs.jpeg");
   }
-  25%{
+  25% {
     background-image: url("/img/aboutUs.jpeg");
   }
-  26%{
+  26% {
     background-image: url("/img/presencia.jpg");
   }
-  75%{
+  75% {
     background-image: url("/img/presencia.jpg");
   }
-  76%{
+  76% {
     background-image: url("/img/niubizRegiones.png");
   }
 }
@@ -107,6 +107,7 @@ h2 {
   text-align: center;
   border: none;
   transition: all 0.5s ease;
+  font-weight: 500;
 }
 
 #intranet-link:hover {
@@ -122,62 +123,66 @@ h2 {
   height: calc(100% - 5rem);
 }
 
-
 /*--------------------------------nuestros servicios*---------------------*/
-.services{
-  background-color: rgb(255, 255, 255); 
+.services {
+  background-color: rgb(255, 255, 255);
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items:center;
-  align-content: center;
+  align-items: center;
   padding: 0 3rem;
-  
 }
-.title-service{
+
+.title-service {
   display: flex;
   justify-content: center;
   padding-top: 1rem;
-  
 }
-.title-service h2{
-color: mediumseagreen;
-font-size: 2.5rem;}
+.title-service h2 {
+  color: mediumseagreen;
+  font-size: 2rem;
+}
 
-.service-group{
+.service-group {
   display: flex;
   align-content: center;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 100%;
-  padding: 2rem;
-
+  padding: 2rem 0;
 }
 
 .service {
   background-color: rgb(255, 255, 255);
-  height: 20rem;
+  height: fit-content;
   width: 20rem;
   border-radius: 1rem;
-  border: solid 0.5px mediumseagreen;
+  box-shadow: 0 0 0.3rem 0.2rem #00000038;
   justify-content: center;
   align-items: center;
-
 }
-.service p,h3{
+
+.service .service-content {
+  padding: 1rem;
+}
+
+.service p,
+h3 {
   text-align: center;
 }
-.service h3{
+.service h3 {
   color: mediumseagreen;
+  font-size: 2rem;
 }
 
-.service-image{
+.service-image {
   height: 10rem;
   width: 100%;
   border-radius: 1rem 1rem 0rem 0rem;
+  object-fit: cover;
 }
 
 /*-----------------button service*/
-button{
+button {
   text-decoration: none;
   background-color: mediumseagreen;
   padding: 0.5rem 2rem;
@@ -188,72 +193,75 @@ button{
   text-align: center;
   border: none;
   transition: all 0.5s ease;
+  font-weight: 500;
 }
 
-button:hover{
+button:hover {
   background-color: rgb(22, 149, 79);
   box-shadow: 0 0 1rem mediumseagreen;
 }
 
-
 /*-----------------------SECTION ABOUT US---------------------------------------------*/
-.aboutUs{
+.aboutUs {
   padding: 0 3rem;
 
   display: flex;
-  gap:2rem;
-  margin:4rem 0;
+  gap: 2rem;
+  margin: 4rem 0;
 }
-.about-us-content{
+.about-us-content h2{
+  color: mediumseagreen;
+  font-size: 2rem;
+}
+.about-us-content {
   align-items: start;
   display: flex;
   flex-direction: column;
-  gap:1rem;
+  gap: 1rem;
   justify-content: center;
   text-align: start;
   width: 50%;
-  
 }
-.aboutUs img{
+.aboutUs img {
   height: 20rem;
   width: 50%;
-  object-fit: cover;border-radius: 1rem;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
 
 /*--------------------------SEDES LOZAMORA---------------------------------------------*/
 .sedesLozamora {
-  display:flex;
+  display: flex;
   align-items: center;
   gap: 10rem;
   padding: 0 3rem;
-
 }
 
 /*REGIONES */
-.sedesLozamora .sedes-titulo{
+.sedesLozamora .sedes-titulo {
   color: rgb(166, 166, 166);
   font-size: 3rem;
   font-weight: 700;
 }
 
-.sedesLozamora .sede-container{
+.sedesLozamora .sede-container {
   display: none;
   height: fit-content;
-  width: 50rem;
+  width: 25rem;
   background-color: rgb(255, 255, 255);
   border-radius: 1rem;
   box-shadow: 0 0 0.3rem 0.2rem #00000038;
 }
 
-.sedesLozamora .sede-container #sede-img{
+.sedesLozamora .sede-container #sede-img {
   height: 15rem;
   object-fit: cover;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
 }
 
-.sedesLozamora .sede-container .sede-content{
+.sedesLozamora .sede-container .sede-content {
   text-align: center;
   padding: 1rem;
 }
@@ -263,14 +271,18 @@ button:hover{
 }
 
 .mapPeru path {
-  fill:  #dbdbdb88;
+  fill: #dbdbdb88;
   stroke: #6b6b6b;
   stroke-width: 0.5px;
   cursor: pointer;
   transition: fill 0.5s;
 }
 
-.pin{
+.mapPeru path.active{
+  fill: #3cb37283;
+}
+
+.pin {
   width: 1rem;
   height: 1rem;
   background-color: mediumseagreen;
@@ -278,8 +290,8 @@ button:hover{
   position: absolute;
 }
 
-.pin::before{
-  content: '';
+.pin::before {
+  content: "";
   background: mediumseagreen;
   position: absolute;
   top: 50%;
@@ -291,54 +303,176 @@ button:hover{
   animation: pulse 1.3s ease infinite;
 }
 
-#P-LIMA{
-  top:60%;
+#P-LIMA {
+  top: 60%;
   left: 32%;
 }
 
-#P-ICA{
-  top:73%;
+#P-ICA {
+  top: 73%;
   left: 38%;
 }
 
-#P-TRUJILLO{
-  top:42%;
+#P-TRUJILLO {
+  top: 42%;
   left: 18%;
 }
 
-#P-CHICLAYO{
-  top:33.5%;
+#P-CHICLAYO {
+  top: 33.5%;
   left: 10.5%;
 }
 
-.pin:hover{
+.pin:hover {
   cursor: pointer;
 }
 
-@keyframes pulse{
-  100%{
+@keyframes pulse {
+  100% {
     opacity: 0;
     transform: translate(-50%, -50%) scale(2);
   }
 }
 
-
 /*----------------------------SECTION HIRING-------------------------------------*/
-.hiring{
- background-image: url("/img/vacantes-fondo.png");
- background-repeat: no-repeat;
- background-size: cover;
- background-position: center;
- height: 30rem;
- gap: 3rem;
+.hiring {
+  margin-top: 4rem;
+  background-image: url("/img/vacantes-fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
 }
 
-.shadow-hiring{
+.shadow-hiring {
   display: flex;
-  background-color: #000000a5 ;
+  justify-content: center;
+  background-color: #000000a5;
   width: 100%;
   height: 100%;
 }
-.hiring-content{
-  
+
+.hiring-content {
+  padding: 7rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  gap: 4rem;
+}
+
+.hiring-content-text p {
+  font-size: 2.5rem;
+  color: white;
+  text-align: justify;
+}
+
+.btn-vacantes {
+  width: 100%;
+  text-align: end;
+  margin-top: 1.5rem;
+}
+
+.vacantes {
+  padding: 1rem 4rem;
+  background-color: #ffffff48;
+  box-shadow: 0 0 0.3rem #ffffffc3;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.vacantes:hover {
+  background-color: #ffffff48;
+  box-shadow: 0 0 1rem rgb(255, 255, 255);
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: #000;
+  color: #fff;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .footer-icon img {
+  height: 3rem;
+  width: auto;
+}
+
+footer .footer-content {
+  list-style-type: none;
+}
+
+footer .footer-content li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+footer .footer-content li i {
+  color: mediumseagreen;
+  font-size: 1.7rem;
+  width: 2rem;
+  text-align: center;
+}
+
+footer .footer-content li .footer-list-text {
+  border-left: 1px solid #fff;
+  padding-left: 1rem;
+}
+
+footer .footer-content li .footer-list-text h4{
+  font-weight: 500;
+}
+
+footer .footer-content li .footer-list-text a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 200;
+}
+
+footer .footer-content li .footer-list-text p{
+  font-weight: 200;
+}
+
+footer .footer-copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 2.5rem;
+}
+
+footer .footer-copyright .footer-copyright-text{
+  text-align: end;
+}
+
+footer .footer-copyright .social-media{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style-type: none;
+  gap: 1rem;
+  position: absolute;
+  right: 0;
+}
+
+footer .footer-copyright .social-media li a{
+  color: #fff;
+}
+
+footer .footer-copyright .social-media li a i{
+  font-size: 1.7rem;
 }
