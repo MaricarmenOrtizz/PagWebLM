@@ -1,1 +1,8 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@import "header.scss", "hero-section.scss", "footer.scss";
 @import "index.scss", "nosotros.scss";
