@@ -7,12 +7,14 @@ const regionIca = document.getElementById("PE-ICA");
 const regionLaLibertad = document.getElementById("PE-LAL");
 const regionLambayeque = document.getElementById("PE-LAM");
 
+const pinLima = document.getElementById("P-LIMA");
+const pinIca = document.getElementById("P-ICA");
+const pinTrujillo = document.getElementById("P-TRUJILLO");
+const pinChiclayo = document.getElementById("P-CHICLAYO");
+
 const sedeContainer = document.getElementById("info-sede-container");
 const imgSede = document.getElementById("sede-img");
 const regionContent = sedeContainer.getElementsByClassName("sede-content");
-
-console.log(sedeContainer);
-console.log(regionContent);
 
 /*---LIMA---*/
 
@@ -40,7 +42,7 @@ regionLimaMetropolitana.addEventListener("mouseover", () => {
 regionLimaMetropolitana.addEventListener("mouseleave", () => {
   regionLimaMetropolitana.style.fill = "#dbdbdb88";
   regionLimaProvincia.style.fill = "#dbdbdb88";
-  // sedeContainer.style.display = "none";
+  sedeContainer.style.display = "none";
 });
 
 regionLimaProvincia.addEventListener("mouseover", () => {
@@ -54,7 +56,7 @@ regionLimaProvincia.addEventListener("mouseover", () => {
 regionLimaProvincia.addEventListener("mouseleave", () => {
   regionLimaMetropolitana.style.fill = "#dbdbdb88";
   regionLimaProvincia.style.fill = "#dbdbdb88";
-  // sedeContainer.style.display = "none";
+  sedeContainer.style.display = "none";
 });
 
 /*---ICA---*/
@@ -67,7 +69,7 @@ regionIca.addEventListener("mouseover", () => {
 
 regionIca.addEventListener("mouseleave", () => {
   regionIca.style.fill = "#dbdbdb88";
-  // sedeContainer.style.display = "none";
+  sedeContainer.style.display = "none";
 });
 
 /*---TRUJILLO---*/
@@ -80,7 +82,7 @@ regionLaLibertad.addEventListener("mouseover", () => {
 
 regionLaLibertad.addEventListener("mouseleave", () => {
   regionLaLibertad.style.fill = "#dbdbdb88";
-  // sedeContainer.style.display = "none";
+  sedeContainer.style.display = "none";
 });
 
 /*---CHICLAYO---*/
@@ -93,5 +95,5 @@ regionLambayeque.addEventListener("mouseover", () => {
 
 regionLambayeque.addEventListener("mouseleave", () => {
   regionLambayeque.style.fill = "#dbdbdb88";
-  // sedeContainer.style.display = "none";
+  sedeContainer.style.display = "none";
 });

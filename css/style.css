@@ -238,7 +238,7 @@ button:hover{
 }
 
 .sedesLozamora .sede-container{
-  /* display: none; */
+  display: none;
   height: fit-content;
   width: 50rem;
   background-color: rgb(255, 255, 255);
@@ -278,26 +278,6 @@ button:hover{
   position: absolute;
 }
 
-.pin.lima{
-  top:62%;
-  left: 33%;
-}
-
-.pin.ica{
-  top:75%;
-  left: 43%;
-}
-
-.pin.trujillo{
-  top:43%;
-  left: 17%;
-}
-
-.pin.chiclayo{
-  top:35%;
-  left: 10%;
-}
-
 .pin::before{
   content: '';
   background: mediumseagreen;
@@ -309,6 +289,30 @@ button:hover{
   height: 100%;
   border-radius: 50%;
   animation: pulse 1.3s ease infinite;
+}
+
+#P-LIMA{
+  top:60%;
+  left: 32%;
+}
+
+#P-ICA{
+  top:73%;
+  left: 38%;
+}
+
+#P-TRUJILLO{
+  top:42%;
+  left: 18%;
+}
+
+#P-CHICLAYO{
+  top:33.5%;
+  left: 10.5%;
+}
+
+.pin:hover{
+  cursor: pointer;
 }
 
 @keyframes pulse{
