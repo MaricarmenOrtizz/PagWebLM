@@ -45,6 +45,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    position: relative;
     .footer-copyright-text {
       text-align: end;
     }
@@ -55,7 +56,7 @@ footer {
       list-style-type: none;
       gap: 1rem;
       position: absolute;
-      right: 3rem;
+      right: 0;
       li {
         a {
           color: #fff;

@@ -4,5 +4,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-@import "header.scss", "hero-section.scss", "footer.scss";
-@import "index.scss", "nosotros.scss";
+@import "header.scss", "hero-section.scss";
+@import "index.scss", "nosotros.scss" , "servicios.scss";
+@import "footer.scss";

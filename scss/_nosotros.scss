@@ -1,0 +1,324 @@
+.introduction-section {
+  padding: 2rem 3rem;
+  text-align: justify;
+  line-height: 2;
+  .introduccion {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    figure {
+      width: 70rem;
+      height: 10rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        object-fit: cover;
+        transition: all 1s ease;
+      }
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .history {
+    h2 {
+      color: mediumseagreen;
+      font-size: 2rem;
+    }
+  }
+}
+
+.time-line {
+  display: flex;
+  position: relative;
+  margin: 3rem;
+  padding-bottom: 1.5rem;
+  gap: 2rem;
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 15rem);
+    height: 0.35rem;
+    background-color: mediumseagreen;
+    top: 4.1rem;
+    left: 8rem;
+
+    @keyframes moveline {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: calc(100% - 16rem);
+      }
+    }
+    animation: moveline 6s infinite forwards;
+  }
+  .container {
+    position: relative;
+    .container-time-mark {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      .date {
+        border: solid 1px mediumseagreen;
+        border-radius: 1rem;
+        width: fit-content;
+        padding: 0.5rem 1rem;
+      }
+      .time-mark-dot {
+        width: 1.2rem;
+        height: 1.2rem;
+        background-color: mediumseagreen;
+        border-radius: 50%;
+      }
+    }
+    .container-time-text {
+      text-align: center;
+      margin-top: 1.5rem;
+      p {
+        background-color: #dedede;
+        padding: 1rem;
+        border-radius: 1rem;
+      }
+      img {
+        margin-top: 1rem;
+        height: 6rem;
+      }
+    }
+  }
+}
+
+.mission-vision {
+  background-color: #d9d9d961;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  position: relative;
+  .green-line {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 5rem);
+    width: 10rem;
+    height: 0.4rem;
+    background-color: mediumseagreen;
+  }
+  .mission-vision-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    img {
+      height: 5rem;
+    }
+    h4 {
+      color: mediumseagreen;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+$t: 2.5s;
+$e1: cubic-bezier(0.8, 0, 0.1, 1);
+$e2: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+$er: linear;
+$slides: 9;
+$images: url(../img/team_gerencia.JPG) url(../img/team-rrhh.JPG)
+  url(../img/team-operaciones.JPG) url(../img/team-adminstracion.JPG)
+  url(../img/aboutUs.jpeg) url(../img/team-niubiz.JPG)
+  url(../img/niubiz-regiones.JPG) url(../img/team-claro.JPG)
+  url(../img/team-claro-supervisores.JPG);
+
+.teams{
+  display: flex;
+  padding: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: mediumseagreen;
+  .teams-text{
+    h2{
+      color: white;
+      font-size: 3rem;
+     
+    }
+  }
+  .our-teams {
+  height: 25rem;
+  width: 70%;
+  overflow: hidden;
+  position:relative;
+ display:flex;
+ 
+  
+  .teams-shutters {
+    position: absolute;
+    height: 150vmax;
+    width: 150vmax;
+    left: calc(50% - 75vmax);
+    top: calc(50% - 75vmax);
+    pointer-events: none;
+    z-index: 2;
+    @keyframes rotateFrame {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(180deg);
+      }
+    }
+    animation: rotateFrame $t * 9 $er infinite;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 50%;
+      transform: translate3d(-50%, 0, 0);
+      background-color: mediumseagreen;
+      pointer-events: auto;
+    }
+    &:before {
+      bottom: 50%;
+      @keyframes openTop {
+        0% {
+          transform: translate3d(-50%, 0, 0);
+          animation-timing-function: $e1;
+        }
+        40% {
+          transform: translate3d(-50%, -65vmax, 0);
+          animation-timing-functon: $e2;
+        }
+        70% {
+          transform: translate3d(-50%, -65vmax, 0);
+          animation-timing-functon: $e2;
+        }
+        100% {
+          transform: translate3d(-50%, 0, 0);
+          animation-timing-function: $e2;
+        }
+      }
+      animation: openTop $t * 2 infinite;
+    }
+    &:after {
+      top: 50%;
+      @keyframes openBottom {
+        0% {
+          transform: translate3d(-50%, 0, 0);
+          animation-timing-function: $e1;
+        }
+        40% {
+          transform: translate3d(-50%, 65vmax, 0);
+          animation-timing-functon: $e2;
+        }
+        70% {
+          transform: translate3d(-50%, 65vmax, 0);
+          animation-timing-functon: $e2;
+        }
+        100% {
+          transform: translate3d(-50%, 0, 0);
+          animation-timing-function: $e2;
+        }
+      }
+      animation: openBottom $t * 2 infinite;
+    }
+  }
+
+  .teams-slides {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .team-slide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: auto;
+    @keyframes showHideSlide {
+      0% {
+        opacity: 1;
+        z-index: 1;
+      }
+      #{100% / $slides} {
+        opacity: 0;
+        z-index: -1;
+      }
+      100% {
+        opacity: 0;
+        z-index: -1;
+      }
+    }
+    animation: showHideSlide infinite $t * $slides * 2 steps(1);
+    @for $i from 1 through $slides {
+      &:nth-child(#{$i}) {
+        animation-delay: $t * ($i - 1) * 2;
+        .team-slide-bg {
+          background-image: nth($images, $i);
+        }
+      }
+    }
+
+    .team-slide-bg {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 1;
+      z-index: -1;
+      @keyframes bgInOut {
+        0% {
+          transform: rotate(-45deg) scale(1.1);
+          animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        33% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(0deg);
+        }
+        66% {
+          transform: rotate(0deg);
+          animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+        }
+        100% {
+          transform: rotate(45deg) scale(0.9);
+        }
+      }
+      animation: bgInOut $t * 4 -$t * 2 infinite;
+    }
+    .team-slide-content {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      color: white;
+      line-height: 1;
+      text-align:center;
+      z-index: 2;
+      opacity: 1;
+      background-color: #000000e9;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      width: fit-content;
+      span {
+        // display: block;
+        font-size: 1rem;
+      }
+    }
+  }
+ 
+}
+}
