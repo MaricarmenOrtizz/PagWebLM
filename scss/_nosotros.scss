@@ -124,6 +124,72 @@
   }
 }
 
+.teams-carousel {
+  position: relative;
+  margin-bottom: 4rem;
+  h2 {
+    color: mediumseagreen;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+  .swiper-teams {
+    width: 90%;
+    position: unset;
+    .swiper-wrapper {
+      margin: 2.5rem 0;
+      .team-card {
+        height: 20rem;
+        box-shadow: 0 5px 10px #00000033;
+        background-color: #fff;
+        border-radius: 1rem;
+        position: relative;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img {
+          height: 80%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 1rem 1rem 0 0;
+        }
+        .team-card-text{
+          text-align: center;
+          margin-bottom: 1.2rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .swiper-slide-active{
+      transition: all 0.5s ease;
+      transform: scale(1.2);
+      z-index: 10;
+      box-shadow: 0 0 20px #00000033;
+    }
+    .swiper-button-prev {
+      color: mediumseagreen;
+      top: calc(50% + 2rem);
+      left: 1.5rem;
+      font-weight: bold;
+      transition: all ease 0.5s;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+    .swiper-button-next {
+      color: mediumseagreen;
+      top: calc(50% + 2rem);
+      right: 1.5rem;
+      font-weight: bold;
+      transition: all ease 0.5s;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
 $t: 2.5s;
 $e1: cubic-bezier(0.8, 0, 0.1, 1);
 $e2: cubic-bezier(0.6, 0.04, 0.98, 0.335);
@@ -135,190 +201,187 @@ $images: url(../img/team_gerencia.JPG) url(../img/team-rrhh.JPG)
   url(../img/niubiz-regiones.JPG) url(../img/team-claro.JPG)
   url(../img/team-claro-supervisores.JPG);
 
-.teams{
+.teams {
   display: flex;
   padding: 3rem;
   justify-content: space-between;
   align-items: center;
   background-color: mediumseagreen;
-  .teams-text{
-    h2{
+  .teams-text {
+    h2 {
       color: white;
       font-size: 3rem;
-     
     }
   }
   .our-teams {
-  height: 25rem;
-  width: 70%;
-  overflow: hidden;
-  position:relative;
- display:flex;
- 
-  
-  .teams-shutters {
-    position: absolute;
-    height: 150vmax;
-    width: 150vmax;
-    left: calc(50% - 75vmax);
-    top: calc(50% - 75vmax);
-    pointer-events: none;
-    z-index: 2;
-    @keyframes rotateFrame {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(180deg);
-      }
-    }
-    animation: rotateFrame $t * 9 $er infinite;
+    height: 25rem;
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
 
-    &:before,
-    &:after {
-      content: "";
+    .teams-shutters {
       position: absolute;
-      height: 100%;
-      width: 100%;
-      left: 50%;
-      transform: translate3d(-50%, 0, 0);
-      background-color: mediumseagreen;
-      pointer-events: auto;
-    }
-    &:before {
-      bottom: 50%;
-      @keyframes openTop {
+      height: 150vmax;
+      width: 150vmax;
+      left: calc(50% - 75vmax);
+      top: calc(50% - 75vmax);
+      pointer-events: none;
+      z-index: 2;
+      @keyframes rotateFrame {
         0% {
-          transform: translate3d(-50%, 0, 0);
-          animation-timing-function: $e1;
-        }
-        40% {
-          transform: translate3d(-50%, -65vmax, 0);
-          animation-timing-functon: $e2;
-        }
-        70% {
-          transform: translate3d(-50%, -65vmax, 0);
-          animation-timing-functon: $e2;
+          transform: rotate(0deg);
         }
         100% {
-          transform: translate3d(-50%, 0, 0);
-          animation-timing-function: $e2;
+          transform: rotate(180deg);
         }
       }
-      animation: openTop $t * 2 infinite;
-    }
-    &:after {
-      top: 50%;
-      @keyframes openBottom {
-        0% {
-          transform: translate3d(-50%, 0, 0);
-          animation-timing-function: $e1;
-        }
-        40% {
-          transform: translate3d(-50%, 65vmax, 0);
-          animation-timing-functon: $e2;
-        }
-        70% {
-          transform: translate3d(-50%, 65vmax, 0);
-          animation-timing-functon: $e2;
-        }
-        100% {
-          transform: translate3d(-50%, 0, 0);
-          animation-timing-function: $e2;
-        }
-      }
-      animation: openBottom $t * 2 infinite;
-    }
-  }
+      animation: rotateFrame $t * 9 $er infinite;
 
-  .teams-slides {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  .team-slide {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    pointer-events: auto;
-    @keyframes showHideSlide {
-      0% {
-        opacity: 1;
-        z-index: 1;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
+        background-color: mediumseagreen;
+        pointer-events: auto;
       }
-      #{100% / $slides} {
-        opacity: 0;
-        z-index: -1;
-      }
-      100% {
-        opacity: 0;
-        z-index: -1;
-      }
-    }
-    animation: showHideSlide infinite $t * $slides * 2 steps(1);
-    @for $i from 1 through $slides {
-      &:nth-child(#{$i}) {
-        animation-delay: $t * ($i - 1) * 2;
-        .team-slide-bg {
-          background-image: nth($images, $i);
+      &:before {
+        bottom: 50%;
+        @keyframes openTop {
+          0% {
+            transform: translate3d(-50%, 0, 0);
+            animation-timing-function: $e1;
+          }
+          40% {
+            transform: translate3d(-50%, -65vmax, 0);
+            animation-timing-functon: $e2;
+          }
+          70% {
+            transform: translate3d(-50%, -65vmax, 0);
+            animation-timing-functon: $e2;
+          }
+          100% {
+            transform: translate3d(-50%, 0, 0);
+            animation-timing-function: $e2;
+          }
         }
+        animation: openTop $t * 2 infinite;
+      }
+      &:after {
+        top: 50%;
+        @keyframes openBottom {
+          0% {
+            transform: translate3d(-50%, 0, 0);
+            animation-timing-function: $e1;
+          }
+          40% {
+            transform: translate3d(-50%, 65vmax, 0);
+            animation-timing-functon: $e2;
+          }
+          70% {
+            transform: translate3d(-50%, 65vmax, 0);
+            animation-timing-functon: $e2;
+          }
+          100% {
+            transform: translate3d(-50%, 0, 0);
+            animation-timing-function: $e2;
+          }
+        }
+        animation: openBottom $t * 2 infinite;
       }
     }
 
-    .team-slide-bg {
-      position: relative;
+    .teams-slides {
+      position: absolute;
       height: 100%;
       width: 100%;
       top: 0;
       left: 0;
-      background-size: cover;
-      background-position: center;
-      opacity: 1;
-      z-index: -1;
-      @keyframes bgInOut {
+    }
+    .team-slide {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      pointer-events: auto;
+      @keyframes showHideSlide {
         0% {
-          transform: rotate(-45deg) scale(1.1);
-          animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          opacity: 1;
+          z-index: 1;
         }
-        33% {
-          transform: rotate(0deg);
-        }
-        50% {
-          transform: rotate(0deg);
-        }
-        66% {
-          transform: rotate(0deg);
-          animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+        #{100% / $slides} {
+          opacity: 0;
+          z-index: -1;
         }
         100% {
-          transform: rotate(45deg) scale(0.9);
+          opacity: 0;
+          z-index: -1;
         }
       }
-      animation: bgInOut $t * 4 -$t * 2 infinite;
-    }
-    .team-slide-content {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate3d(-50%, -50%, 0);
-      color: white;
-      line-height: 1;
-      text-align:center;
-      z-index: 2;
-      opacity: 1;
-      background-color: #000000e9;
-      padding: 1rem 2rem;
-      border-radius: 0.5rem;
-      width: fit-content;
-      span {
-        // display: block;
-        font-size: 1rem;
+      animation: showHideSlide infinite $t * $slides * 2 steps(1);
+      @for $i from 1 through $slides {
+        &:nth-child(#{$i}) {
+          animation-delay: $t * ($i - 1) * 2;
+          .team-slide-bg {
+            background-image: nth($images, $i);
+          }
+        }
+      }
+
+      .team-slide-bg {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+        z-index: -1;
+        @keyframes bgInOut {
+          0% {
+            transform: rotate(-45deg) scale(1.1);
+            animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          }
+          33% {
+            transform: rotate(0deg);
+          }
+          50% {
+            transform: rotate(0deg);
+          }
+          66% {
+            transform: rotate(0deg);
+            animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+          }
+          100% {
+            transform: rotate(45deg) scale(0.9);
+          }
+        }
+        animation: bgInOut $t * 4 -$t * 2 infinite;
+      }
+      .team-slide-content {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        color: white;
+        line-height: 1;
+        text-align: center;
+        z-index: 2;
+        opacity: 1;
+        background-color: #000000e9;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        width: fit-content;
+        span {
+          // display: block;
+          font-size: 1rem;
+        }
       }
     }
   }
- 
-}
 }

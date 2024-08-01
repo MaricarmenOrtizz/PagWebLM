@@ -280,15 +280,6 @@ button:hover {
 .sedesLozamora .mapPeru path.active {
   fill: rgba(60, 179, 114, 0.5137254902);
 }
-.sedesLozamora .mapPeru .light {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 35rem;
-  height: 35rem;
-  clip-path: polygon(0% 0%, 100% 82%, 100% 18%);
-  background-color: rgba(255, 0, 0, 0.505);
-}
 .sedesLozamora .mapPeru .pin {
   width: 1rem;
   height: 1rem;
@@ -524,6 +515,72 @@ button:hover {
 .mission-vision .mission-vision-card h4 {
   color: mediumseagreen;
   font-size: 1.5rem;
+}
+
+.teams-carousel {
+  position: relative;
+  margin-bottom: 4rem;
+}
+.teams-carousel h2 {
+  color: mediumseagreen;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.teams-carousel .swiper-teams {
+  width: 90%;
+  position: unset;
+}
+.teams-carousel .swiper-teams .swiper-wrapper {
+  margin: 2.5rem 0;
+}
+.teams-carousel .swiper-teams .swiper-wrapper .team-card {
+  height: 20rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 1rem;
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.teams-carousel .swiper-teams .swiper-wrapper .team-card img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.teams-carousel .swiper-teams .swiper-wrapper .team-card .team-card-text {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+.teams-carousel .swiper-teams .swiper-slide-active {
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.teams-carousel .swiper-teams .swiper-button-prev {
+  color: mediumseagreen;
+  top: calc(50% + 2rem);
+  left: 1.5rem;
+  font-weight: bold;
+  transition: all ease 0.5s;
+}
+.teams-carousel .swiper-teams .swiper-button-prev:hover {
+  transform: scale(1.1);
+}
+.teams-carousel .swiper-teams .swiper-button-next {
+  color: mediumseagreen;
+  top: calc(50% + 2rem);
+  right: 1.5rem;
+  font-weight: bold;
+  transition: all ease 0.5s;
+}
+.teams-carousel .swiper-teams .swiper-button-next:hover {
+  transform: scale(1.1);
 }
 
 .teams {
