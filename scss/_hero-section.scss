@@ -10,7 +10,7 @@
   transition: all 0.5s ease;
   color: #fff;
   &.index {
-    background-image: url("/img/aboutUs.jpeg");
+    background-image: url("../img/about-us.png");
     animation: banner-index 5s infinite linear;
   }
   .shadow {
@@ -28,18 +28,18 @@
 
 @keyframes banner-index {
   0% {
-    background-image: url("/img/aboutUs.jpeg");
+    background-image: url("../img/aboutUs.jpeg");
   }
   25% {
-    background-image: url("/img/aboutUs.jpeg");
+    background-image: url("../img/aboutUs.jpeg");
   }
   26% {
-    background-image: url("/img/presencia.jpg");
+    background-image: url("../img/presencia.jpg");
   }
   75% {
-    background-image: url("/img/presencia.jpg");
+    background-image: url("../img/presencia.jpg");
   }
   76% {
-    background-image: url("/img/niubizRegiones.png");
+    background-image: url("../img/niubizRegiones.png");
   }
 }

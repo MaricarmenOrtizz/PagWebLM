@@ -70,7 +70,7 @@ header.sticking {
   color: #fff;
 }
 .hero-section.index {
-  background-image: url("/img/aboutUs.jpeg");
+  background-image: url("../img/about-us.png");
   animation: banner-index 5s infinite linear;
 }
 .hero-section .shadow {
@@ -87,19 +87,19 @@ header.sticking {
 
 @keyframes banner-index {
   0% {
-    background-image: url("/img/aboutUs.jpeg");
+    background-image: url("../img/aboutUs.jpeg");
   }
   25% {
-    background-image: url("/img/aboutUs.jpeg");
+    background-image: url("../img/aboutUs.jpeg");
   }
   26% {
-    background-image: url("/img/presencia.jpg");
+    background-image: url("../img/presencia.jpg");
   }
   75% {
-    background-image: url("/img/presencia.jpg");
+    background-image: url("../img/presencia.jpg");
   }
   76% {
-    background-image: url("/img/niubizRegiones.png");
+    background-image: url("../img/niubizRegiones.png");
   }
 }
 h1 {
@@ -344,7 +344,7 @@ button:hover {
 /*----------------------------SECTION HIRING-------------------------------------*/
 .hiring {
   margin-top: 4rem;
-  background-image: url("/img/vacantes-fondo.png");
+  background-image: url("../img/vacantes-fondo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -534,6 +534,7 @@ button:hover {
 }
 .teams-carousel .swiper-teams .swiper-wrapper .team-card {
   height: 20rem;
+  width: 33.3333333333%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   border-radius: 1rem;
