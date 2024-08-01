@@ -1,0 +1,42 @@
+.vacantes-group{
+    position: relative;
+    background-color: aqua;
+    display:flex;
+    flex-direction: column;
+    padding: 3rem;
+    .vacantes-tittle{
+        h2{color:black; text-align: center;}
+
+    }
+    .vacantes{
+        background-color: rebeccapurple;
+        display:flex;
+       justify-content: space-between;      
+
+        .vacante{
+            background-color: violet;
+            width: 15rem;
+            padding: 1rem;
+            
+            img{
+                height: 10rem;
+                width: 100%;
+            }
+            p{
+                font-weight: 100;
+                font-size: 1rem;
+            }
+            
+        }
+
+    }
+}
+
+.trabajo-lozamora{
+    .trabajo-lozamora-content{
+        video{
+            height: 15rem;
+        }
+    }
+    
+}

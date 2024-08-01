@@ -8,7 +8,7 @@
 .slider__navi {
   position: absolute;
   top: 50%;
-  right: 20px;
+  left: 3rem;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -24,7 +24,7 @@
     text-indent: -9999px;
     box-shadow: none;
     border: none;
-    background: #0000005f;
+    background: #ffffff5f;
     transition: all 0.5s ease;
     &:hover {
       height: 0.9rem;
@@ -68,7 +68,7 @@
     color: #fff;
     transition: transform 0.1s linear;
     .flex__content {
-      margin-left: 80px;
+      margin-left: 120px;
       width: 55%;
       opacity: 1;
       transform: translate3d(0, 0, 0);

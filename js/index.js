@@ -1,6 +1,8 @@
 import { sedesInfo } from "./data.js";
 
 /*---MAPA---*/
+const sedes = document.getElementsByClassName("sede");
+
 const regionLimaMetropolitana = document.getElementById("PE-LMA");
 const regionLimaProvincia = document.getElementById("PE-LIM");
 const regionIca = document.getElementById("PE-ICA");
@@ -16,12 +18,13 @@ const sedeContainer = document.getElementById("info-sede-container");
 const imgSede = document.getElementById("sede-img");
 const regionContent = sedeContainer.getElementsByClassName("sede-content");
 
-/*---LIMA---*/
+let regionIndex = 0;
+let regionTimer = null;
 
 function showSedeInfo(regionName) {
   let regionInfo = sedesInfo.find((s) => s.name === regionName);
 
-  imgSede.setAttribute('src', regionInfo.img);
+  imgSede.setAttribute("src", regionInfo.img);
 
   regionContent[0].innerHTML = `
     <h3>${regionInfo.name}</h3>
@@ -31,111 +34,113 @@ function showSedeInfo(regionName) {
   `;
 }
 
-function setRegionStyle(region, display){
-  if(region.classList.contains('active')) region.classList.remove('active');
-  else region.classList.add('active');
-  
+function setRegionStyle(region, display) {
+  for (const sede of sedes) {
+    sede.classList.remove("active");
+  }
+
+  region.classList.add("active");
+
   sedeContainer.style.display = display;
 }
 
+function autoPlayRegions(i) {
+  if (i < 4) {
+    switch (i) {
+      case 0:
+        setRegionStyle(regionLambayeque, "block");
+        showSedeInfo("Chiclayo");
+        break;
+      case 1:
+        setRegionStyle(regionLaLibertad, "block");
+        showSedeInfo("Trujillo");
+        break;
+      case 2:
+        setRegionStyle(regionLimaMetropolitana, "block");
+        setRegionStyle(regionLimaProvincia, "block");
+        showSedeInfo("Lima");
+        break;
+      case 3:
+        setRegionStyle(regionIca, "block");
+        showSedeInfo("Ica");
+        break;
+      default:
+        break;
+    }
+
+    regionTimer = setTimeout(() => {
+      regionIndex++;
+      autoPlayRegions(regionIndex);
+    }, 2000);
+  } else {
+    regionIndex = 0;
+    clearTimeout(regionTimer);
+    autoPlayRegions(regionIndex);
+  }
+}
+
+autoPlayRegions(regionIndex);
+
+/*---LIMA---*/
+
 regionLimaMetropolitana.addEventListener("mouseover", () => {
-  setRegionStyle(regionLimaMetropolitana, 'block');
-  setRegionStyle(regionLimaProvincia, 'block');
-
-  showSedeInfo('Lima');
-});
-
-regionLimaMetropolitana.addEventListener("mouseleave", () => {
-  setRegionStyle(regionLimaMetropolitana, 'none');
-  setRegionStyle(regionLimaProvincia, 'none');
+  regionIndex = 2;
+  clearTimeout(regionTimer);
+  autoPlayRegions(regionIndex);
 });
 
 regionLimaProvincia.addEventListener("mouseover", () => {
-  setRegionStyle(regionLimaMetropolitana, 'block');
-  setRegionStyle(regionLimaProvincia, 'block');
-
-  showSedeInfo('Lima');
-});
-
-regionLimaProvincia.addEventListener("mouseleave", () => {
-  setRegionStyle(regionLimaMetropolitana, 'none');
-  setRegionStyle(regionLimaProvincia, 'none');
+  regionIndex = 2;
+  clearTimeout(regionTimer);
+  autoPlayRegions(regionIndex);
 });
 
 /*---ICA---*/
 regionIca.addEventListener("mouseover", () => {
-  setRegionStyle(regionIca, 'block');
-
-  showSedeInfo('Ica');
-});
-
-regionIca.addEventListener("mouseleave", () => {
-  setRegionStyle(regionIca, 'none');
+  regionIndex = 3;
+  clearTimeout(regionTimer);
+  autoPlayRegions(regionIndex);
 });
 
 /*---TRUJILLO---*/
 regionLaLibertad.addEventListener("mouseover", () => {
-  setRegionStyle(regionLaLibertad, 'block');
-
-  showSedeInfo('Trujillo');
-});
-
-regionLaLibertad.addEventListener("mouseleave", () => {
-  setRegionStyle(regionLaLibertad, 'none');
+  regionIndex = 1;
+  clearTimeout(regionTimer);
+  autoPlayRegions(regionIndex);
 });
 
 /*---CHICLAYO---*/
 regionLambayeque.addEventListener("mouseover", () => {
-  setRegionStyle(regionLambayeque, 'block');
-
-  showSedeInfo('Chiclayo');
-});
-
-regionLambayeque.addEventListener("mouseleave", () => {
-  setRegionStyle(regionLambayeque, 'none');
+  regionIndex = 0;
+  clearTimeout(regionTimer);
+  autoPlayRegions(regionIndex);
 });
 
 /*---PIN---*/
 
 pinLima.addEventListener("mouseover", () => {
-  setRegionStyle(regionLimaMetropolitana, 'block');
-  setRegionStyle(regionLimaProvincia, 'block');
-
-  showSedeInfo('Lima');
-});
-
-pinLima.addEventListener("mouseleave", () => {
-  setRegionStyle(regionLimaMetropolitana, 'none');
-  setRegionStyle(regionLimaProvincia, 'none');
+  regionIndex = 2;
+  clearTimeout(regionTimer);
+  autoPlayRegions(regionIndex);
 });
 
 /*---ICA---*/
 pinIca.addEventListener("mouseover", () => {
-  setRegionStyle(regionIca, 'block');
-
-  showSedeInfo('Ica');
-});
-
-pinIca.addEventListener("mouseleave", () => {
-  setRegionStyle(regionIca, 'none');
+  regionIndex = 3;
+  clearTimeout(regionTimer);
+  autoPlayRegions(regionIndex);
 });
 
 /*---TRUJILLO---*/
 pinTrujillo.addEventListener("mouseover", () => {
-  setRegionStyle(regionLaLibertad, 'block');
-  showSedeInfo('Trujillo');
-});
-
-pinTrujillo.addEventListener("mouseleave", () => {
-  setRegionStyle(regionLaLibertad, 'none');
+  regionIndex = 1;
+  clearTimeout(regionTimer);
+  autoPlayRegions(regionIndex);
 });
 
 /*---CHICLAYO---*/
 pinChiclayo.addEventListener("mouseover", () => {
-  setRegionStyle(regionLambayeque, 'block');
-  showSedeInfo('Chiclayo');
-});
-
-pinChiclayo.addEventListener("mouseleave", () => {
-  setRegionStyle(regionLambayeque, 'none');
+  regionIndex = 0;
+  clearTimeout(regionTimer);
+  autoPlayRegions(regionIndex);
 });

@@ -280,6 +280,15 @@ button:hover {
 .sedesLozamora .mapPeru path.active {
   fill: rgba(60, 179, 114, 0.5137254902);
 }
+.sedesLozamora .mapPeru .light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35rem;
+  height: 35rem;
+  clip-path: polygon(0% 0%, 100% 82%, 100% 18%);
+  background-color: rgba(255, 0, 0, 0.505);
+}
 .sedesLozamora .mapPeru .pin {
   width: 1rem;
   height: 1rem;
@@ -750,7 +759,7 @@ button:hover {
 .slider__navi {
   position: absolute;
   top: 50%;
-  right: 20px;
+  left: 3rem;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -767,7 +776,7 @@ button:hover {
   text-indent: -9999px;
   box-shadow: none;
   border: none;
-  background: rgba(0, 0, 0, 0.3725490196);
+  background: rgba(255, 255, 255, 0.3725490196);
   transition: all 0.5s ease;
 }
 .slider__navi a:hover {
@@ -812,7 +821,7 @@ button:hover {
   transition: transform 0.1s linear;
 }
 .flex__container .flex__item .flex__content {
-  margin-left: 80px;
+  margin-left: 120px;
   width: 55%;
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -1008,6 +1017,40 @@ button:hover {
 .main-clients-section .clients-container .clients-carousel .swiper-pagination span {
   width: 0.8rem;
   height: 0.8rem;
+}
+
+.vacantes-group {
+  position: relative;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+.vacantes-group .vacantes-tittle h2 {
+  color: black;
+  text-align: center;
+}
+.vacantes-group .vacantes {
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: space-between;
+}
+.vacantes-group .vacantes .vacante {
+  background-color: violet;
+  width: 15rem;
+  padding: 1rem;
+}
+.vacantes-group .vacantes .vacante img {
+  height: 10rem;
+  width: 100%;
+}
+.vacantes-group .vacantes .vacante p {
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.trabajo-lozamora .trabajo-lozamora-content video {
+  height: 15rem;
 }
 
 footer {
