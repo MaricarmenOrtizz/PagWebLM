@@ -320,19 +320,19 @@ button:hover {
 }
 .sedesLozamora .mapPeru #P-LIMA {
   top: 61%;
-  left: 36%;
+  left: 37.5%;
 }
 .sedesLozamora .mapPeru #P-ICA {
-  top: 73%;
-  left: 40%;
+  top: 73.5%;
+  left: 41%;
 }
 .sedesLozamora .mapPeru #P-TRUJILLO {
   top: 43%;
-  left: 25%;
+  left: 27.5%;
 }
 .sedesLozamora .mapPeru #P-CHICLAYO {
   top: 35%;
-  left: 19.5%;
+  left: 23%;
 }
 
 @keyframes pulse {

@@ -146,7 +146,6 @@ button:hover {
     width: 60%;
     background-color: #c1c1c1;
     height: 100%;
-    // clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
     .sedes-left-content {
       padding: 3rem;
       height: 100%;
@@ -161,10 +160,8 @@ button:hover {
         height: fit-content;
         width: 100%;
         display: flex;
-        // justify-content: space-between;
         gap: 1rem;
         align-items: center;
-        // clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
         #sede-img {
           width: 60%;
           height: 20rem;
@@ -221,22 +218,22 @@ button:hover {
     }
     #P-LIMA {
       top: 61%;
-      left: 36%;
+      left: 37.5%;
     }
 
     #P-ICA {
-      top: 73%;
-      left: 40%;
+      top: 73.5%;
+      left: 41%;
     }
 
     #P-TRUJILLO {
       top: 43%;
-      left: 25%;
+      left: 27.5%;
     }
 
     #P-CHICLAYO {
       top: 35%;
-      left: 19.5%;
+      left: 23%;
     }
   }
 }
