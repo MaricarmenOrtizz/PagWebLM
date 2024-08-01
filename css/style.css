@@ -241,30 +241,50 @@ button:hover {
 .sedesLozamora {
   display: flex;
   align-items: center;
-  gap: 10rem;
   padding-right: 3rem;
   height: 33rem;
 }
-.sedesLozamora .sedes-tittle {
-  background-image: url("../img/niubizRegiones.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.sedesLozamora .sedes-left {
+  width: 60%;
+  background-color: #c1c1c1;
   height: 100%;
 }
-.sedesLozamora .sedes-tittle .shadow-tittle {
-  padding: 0 3rem;
-  background-color: rgba(0, 0, 0, 0.5215686275);
+.sedesLozamora .sedes-left .sedes-left-content {
+  padding: 3rem;
   height: 100%;
-  display: flex;
-  align-items: center;
 }
-.sedesLozamora .sedes-tittle .shadow-tittle .sedes-titulo {
-  color: #fff;
+.sedesLozamora .sedes-left .sedes-left-content .sedes-titulo {
   font-size: 3rem;
   font-weight: 700;
+  margin-bottom: 2rem;
+}
+.sedesLozamora .sedes-left .sedes-left-content .sede-info-container {
+  background-color: #fff;
+  display: none;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.sedesLozamora .sedes-left .sedes-left-content .sede-info-container #sede-img {
+  width: 60%;
+  height: 20rem;
+  object-fit: cover;
+}
+.sedesLozamora .sedes-left .sedes-left-content .sede-info-container .sede-info-text {
+  padding: 1rem;
+}
+.sedesLozamora .sedes-left .sedes-left-content .sede-info-container .sede-info-text h3 {
+  font-size: 2.5rem;
 }
 .sedesLozamora .mapPeru {
   position: relative;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .sedesLozamora .mapPeru path {
   fill: rgba(255, 255, 255, 0.5333333333);
@@ -299,38 +319,20 @@ button:hover {
   cursor: pointer;
 }
 .sedesLozamora .mapPeru #P-LIMA {
-  top: 60%;
-  left: 32%;
+  top: 61%;
+  left: 36%;
 }
 .sedesLozamora .mapPeru #P-ICA {
   top: 73%;
-  left: 38%;
+  left: 40%;
 }
 .sedesLozamora .mapPeru #P-TRUJILLO {
-  top: 42%;
-  left: 18%;
+  top: 43%;
+  left: 25%;
 }
 .sedesLozamora .mapPeru #P-CHICLAYO {
-  top: 33.5%;
-  left: 10.5%;
-}
-.sedesLozamora .sede-container {
-  display: none;
-  height: fit-content;
-  width: 25rem;
-  background-color: rgb(255, 255, 255);
-  border-radius: 1rem;
-  box-shadow: 0 0 0.3rem 0.2rem rgba(0, 0, 0, 0.2196078431);
-}
-.sedesLozamora .sede-container #sede-img {
-  height: 15rem;
-  object-fit: cover;
-  width: 100%;
-  border-radius: 1rem 1rem 0 0;
-}
-.sedesLozamora .sede-container .sede-content {
-  text-align: center;
-  padding: 1rem;
+  top: 35%;
+  left: 19.5%;
 }
 
 @keyframes pulse {

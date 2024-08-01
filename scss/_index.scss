@@ -140,30 +140,53 @@ button:hover {
 .sedesLozamora {
   display: flex;
   align-items: center;
-  gap: 10rem;
   padding-right: 3rem;
   height: 33rem;
-  .sedes-tittle {
-    background-image: url("../img/niubizRegiones.png");
-    background-repeat: no-repeat;
-    background-position: center;
+  .sedes-left {
+    width: 60%;
+    background-color: #c1c1c1;
     height: 100%;
-    .shadow-tittle {
-      padding: 0 3rem;
-      background-color: #00000085;
+    // clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+    .sedes-left-content {
+      padding: 3rem;
       height: 100%;
-      display: flex;
-      align-items: center;
       .sedes-titulo {
-        color: #fff;
         font-size: 3rem;
         font-weight: 700;
+        margin-bottom: 2rem;
+      }
+      .sede-info-container {
+        background-color: #fff;
+        display: none;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        // justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+        // clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+        #sede-img {
+          width: 60%;
+          height: 20rem;
+          object-fit: cover;
+        }
+        .sede-info-text {
+          padding: 1rem;
+          h3{
+            font-size: 2.5rem;
+          }
+        }
       }
     }
   }
 
   .mapPeru {
     position: relative;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     path {
       fill: #ffffff88;
       stroke: #6b6b6b;
@@ -197,41 +220,23 @@ button:hover {
       }
     }
     #P-LIMA {
-      top: 60%;
-      left: 32%;
+      top: 61%;
+      left: 36%;
     }
 
     #P-ICA {
       top: 73%;
-      left: 38%;
+      left: 40%;
     }
 
     #P-TRUJILLO {
-      top: 42%;
-      left: 18%;
+      top: 43%;
+      left: 25%;
     }
 
     #P-CHICLAYO {
-      top: 33.5%;
-      left: 10.5%;
-    }
-  }
-  .sede-container {
-    display: none;
-    height: fit-content;
-    width: 25rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 1rem;
-    box-shadow: 0 0 0.3rem 0.2rem #00000038;
-    #sede-img {
-      height: 15rem;
-      object-fit: cover;
-      width: 100%;
-      border-radius: 1rem 1rem 0 0;
-    }
-    .sede-content {
-      text-align: center;
-      padding: 1rem;
+      top: 35%;
+      left: 19.5%;
     }
   }
 }

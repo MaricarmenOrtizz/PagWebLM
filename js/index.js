@@ -16,7 +16,7 @@ const pinChiclayo = document.getElementById("P-CHICLAYO");
 
 const sedeContainer = document.getElementById("info-sede-container");
 const imgSede = document.getElementById("sede-img");
-const regionContent = sedeContainer.getElementsByClassName("sede-content");
+const regionContent = sedeContainer.getElementsByClassName("sede-info-text");
 
 let regionIndex = 0;
 let regionTimer = null;
@@ -48,20 +48,20 @@ function autoPlayRegions(i) {
   if (i < 4) {
     switch (i) {
       case 0:
-        setRegionStyle(regionLambayeque, "block");
+        setRegionStyle(regionLambayeque, "flex");
         showSedeInfo("Chiclayo");
         break;
       case 1:
-        setRegionStyle(regionLaLibertad, "block");
+        setRegionStyle(regionLaLibertad, "flex");
         showSedeInfo("Trujillo");
         break;
       case 2:
-        setRegionStyle(regionLimaMetropolitana, "block");
-        setRegionStyle(regionLimaProvincia, "block");
+        setRegionStyle(regionLimaMetropolitana, "flex");
+        setRegionStyle(regionLimaProvincia, "flex");
         showSedeInfo("Lima");
         break;
       case 3:
-        setRegionStyle(regionIca, "block");
+        setRegionStyle(regionIca, "flex");
         showSedeInfo("Ica");
         break;
       default:
@@ -79,7 +79,7 @@ function autoPlayRegions(i) {
   }
 }
 
-autoPlayRegions(regionIndex);
+// autoPlayRegions(regionIndex);
 
 /*---LIMA---*/
 
