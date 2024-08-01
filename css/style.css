@@ -67,6 +67,7 @@ header.sticking {
   width: 100%;
   height: 80vh;
   transition: all 0.5s ease;
+  color: #fff;
 }
 .hero-section.index {
   background-image: url("/img/aboutUs.jpeg");
@@ -81,7 +82,7 @@ header.sticking {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100% - 5rem);
+  height: 100%;
 }
 
 @keyframes banner-index {
@@ -101,11 +102,6 @@ header.sticking {
     background-image: url("/img/niubizRegiones.png");
   }
 }
-h1,
-h2 {
-  color: #ffffff;
-}
-
 h1 {
   font-size: 3rem;
 }
