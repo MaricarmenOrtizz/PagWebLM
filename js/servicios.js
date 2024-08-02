@@ -115,14 +115,14 @@ let carouselNiubiz = new Swiper(".swiper-niubiz", {
 });
 
 let carouselClaro = new Swiper(".swiper-claro", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 20,
   grabCursor: true,
   loop: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-    reverseDirection: true,
+    // reverseDirection: true,
   },
   pagination: {
     el: ".swiper-pagination",

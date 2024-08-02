@@ -1039,6 +1039,65 @@ h1 {
   opacity: 0;
 }
 
+.services-benefits {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 28rem;
+  margin-bottom: 4rem;
+}
+.services-benefits .benefits-info {
+  width: 60%;
+  height: 100%;
+  background-color: mediumseagreen;
+  padding: 3rem;
+  border-radius: 0 1rem 1rem 0;
+}
+.services-benefits .benefits-info h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.services-benefits .benefits-info p {
+  color: #fff;
+  text-align: justify;
+}
+.services-benefits .clients-carousel {
+  width: 40%;
+  height: 90%;
+  margin: 0 3rem;
+}
+.services-benefits .clients-carousel h2 {
+  color: mediumseagreen;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.services-benefits .clients-carousel .swiper-wrapper {
+  margin-bottom: 2.5rem;
+}
+.services-benefits .clients-carousel .swiper-wrapper .client-card {
+  width: 33.3333333333%;
+  height: 18rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 1rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.services-benefits .clients-carousel .swiper-wrapper .client-card img {
+  height: 18rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.services-benefits .clients-carousel .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: mediumseagreen;
+}
+.services-benefits .clients-carousel .swiper-pagination span {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
 .main-clients-section {
   padding: 0 3rem;
 }
