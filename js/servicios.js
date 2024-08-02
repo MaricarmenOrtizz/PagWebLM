@@ -62,6 +62,40 @@ $(".slide-nav").on("click", function (e) {
   }
 });
 
+const claroSection = document.getElementById("main-clients");
+const niubizSection = document.getElementById("main-clients");
+const prosegurSection = document.getElementById("main-clients");
+
+function scrollIntoViewWithOffset(selector) {
+  window.scrollTo({
+    behavior: "smooth",
+    top: selector.getBoundingClientRect().top + window.pageYOffset - 100,
+  });
+}
+
+function loadView(){
+  const redirectToClaro = Boolean(sessionStorage.getItem('redirectToClaro'));
+  const redirectToNiubiz = Boolean(sessionStorage.getItem('redirectToNiubiz'));
+  const redirectToProsegur = Boolean(sessionStorage.getItem('redirectToProsegur'));
+  
+  if(redirectToClaro){
+    sessionStorage.setItem("redirectToClaro", '');
+    scrollIntoViewWithOffset(claroSection);
+  }
+
+  if(redirectToNiubiz){
+    sessionStorage.setItem("redirectToNiubiz", '');
+    scrollIntoViewWithOffset(niubizSection);
+  }
+
+  if(redirectToProsegur){
+    sessionStorage.setItem("redirectToProsegur", '');
+    scrollIntoViewWithOffset(prosegurSection);
+  }
+}
+
+loadView();
+
 /*----CLIENTS CAROUSEL----*/
 
 let carouselNiubiz = new Swiper(".swiper-niubiz", {

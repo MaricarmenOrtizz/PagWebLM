@@ -159,3 +159,39 @@ pinChiclayo.addEventListener("mouseover", () => {
   clearTimeout(regionTimer);
   autoPlayRegions(regionIndex);
 });
+
+/*---REDIRECT BUTTONS---*/
+
+const btnAboutUs = document.getElementById("btn-about-us");
+const btnHiring = document.getElementById("btn-hiring");
+
+btnAboutUs.addEventListener("click", () => {
+  location.href = "./pages/nosotros.html";
+});
+
+btnHiring.addEventListener("click", () => {
+  location.href = "./pages/oportunidadLaboral.html";
+});
+
+/*---REDIRECT PARTNERS BUTTONS---*/
+
+const urlServicesPage = "./pages/servicios.html";
+
+const btnClaroPartner = document.getElementById("btn-claro-partner");
+const btnNiubizPartner = document.getElementById("btn-niubiz-partner");
+const btnProsegurPartner = document.getElementById("btn-prosegur-partner");
+
+btnClaroPartner.addEventListener("click", () => {
+  sessionStorage.setItem("redirectToClaro", true);
+  location.href = urlServicesPage;
+});
+
+btnNiubizPartner.addEventListener("click", () => {
+  sessionStorage.setItem("redirectToNiubiz", true);
+  location.href = urlServicesPage;
+});
+
+btnProsegurPartner.addEventListener("click", () => {
+  sessionStorage.setItem("redirectToProsegur", true);
+  location.href = urlServicesPage;
+});
