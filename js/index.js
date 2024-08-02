@@ -1,4 +1,19 @@
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 import { sedesInfo } from "./data.js";
+
+/*---PARTNERS---*/
+
+let carouselPartners = new Swiper(".swiper-partners", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+});
 
 /*---MAPA---*/
 const sedes = document.getElementsByClassName("sede");
@@ -79,7 +94,7 @@ function autoPlayRegions(i) {
   }
 }
 
-// autoPlayRegions(regionIndex);
+autoPlayRegions(regionIndex);
 
 /*---LIMA---*/
 

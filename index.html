@@ -16,6 +16,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Inicio</title>
@@ -58,54 +63,62 @@
       </div>
     </section>
     <main>
-      <section class="services">
+      <section class="partners-section">
         <span class="green-line"></span>
-        <div class="title-service"><h2>Nuestros Servicios</h2></div>
-        <div class="service-group">
-          <div class="service">
-            <img
-              class="service-image"
-              src="./img/claro-servicio.jpg"
-              alt="Logo"
-            />
-            <div class="service-content">
-              <h3>Claro</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque culpa porro soluta ea.
-              </p>
+        <h2 class="partners-section-title">Nuestros Partners</h2>
+        <div class="swiper swiper-partners partners-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide partner-card">
+              <img
+                class="partner-image"
+                src="./img/claro-servicio.jpg"
+                alt="Logo"
+              />
+              <div class="partner-content">
+                <h3>Claro</h3>
+                <ul class="partner-content-benefits">
+                  <li>Beneficio 1</li>
+                  <li>Beneficio 2</li>
+                  <li>Beneficio 3</li>
+                </ul>
+                <button class="btn-partner">Ver más</button>
+              </div>
+            </div>
+            <div class="swiper-slide partner-card">
+              <img
+                class="partner-image"
+                src="./img/servicio-niubiz.png"
+                alt="Logo"
+              />
+              <div class="partner-content">
+                <h3>Niubiz</h3>
+                <ul class="partner-content-benefits">
+                  <li>Beneficio 1</li>
+                  <li>Beneficio 2</li>
+                  <li>Beneficio 3</li>
+                </ul>
+                <button class="btn-partner">Ver más</button>
+              </div>
+            </div>
+            <div class="swiper-slide partner-card">
+              <img
+                class="partner-image"
+                src="./img/prosegur-service.jpg"
+                alt="Logo"
+              />
+              <div class="partner-content">
+                <h3>Prosegur Alarmas</h3>
+                <ul class="partner-content-benefits">
+                  <li>Beneficio 1</li>
+                  <li>Beneficio 2</li>
+                  <li>Beneficio 3</li>
+                </ul>
+                <button class="btn-partner">Ver más</button>
+              </div>
             </div>
           </div>
-          <div class="service">
-            <img
-              class="service-image"
-              src="./img/servicio-niubiz.png"
-              alt="Logo"
-            />
-            <div class="service-content">
-              <h3>Niubiz</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque culpa porro soluta ea.
-              </p>
-            </div>
-          </div>
-          <div class="service">
-            <img
-              class="service-image"
-              src="./img/prosegur-service.jpg"
-              alt="Logo"
-            />
-            <div class="service-content">
-              <h3>Prosegur Alarmas</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque culpa porro soluta ea.
-              </p>
-            </div>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <button class="btn">Saber más</button>
       </section>
 
       <section class="aboutUs">
@@ -118,23 +131,18 @@
             ab ipsa nulla error libero aliquid provident illo asperiores
             architecto iusto!
           </p>
-          <button class="btn">Conócenos</button>
+          <button class="btn-aboutUs">Conócenos</button>
         </div>
         <figure><img src="./img/about-us.png" alt="Logo" /></figure>
       </section>
+
       <section class="sedesLozamora">
         <div class="sedes-left">
           <div class="sedes-left-content">
             <h2 class="sedes-titulo">Estamos presentes en</h2>
             <div class="sede-info-container" id="info-sede-container">
-              <img id="sede-img" alt="Logo" src="./img/claro-servicio.jpg"/>
-              <div class="sede-info-text">
-                <h3>Region Nombre</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Natus, aspernatur
-                </p>
-              </div>
+              <img id="sede-img" />
+              <div class="sede-info-text"></div>
             </div>
           </div>
         </div>
@@ -311,7 +319,8 @@
           </div>
         </div> -->
       </section>
-      <section class="hiring">
+
+      <section class="hiring-section">
         <div class="shadow-hiring">
           <div class="hiring-content">
             <h1>¿Quieres ser parte de esta gran familia?</h1>
