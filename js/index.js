@@ -8,6 +8,10 @@ let carouselPartners = new Swiper(".swiper-partners", {
   spaceBetween: 20,
   grabCursor: true,
   loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

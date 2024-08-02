@@ -62,14 +62,14 @@ $(".slide-nav").on("click", function (e) {
   }
 });
 
-const claroSection = document.getElementById("main-clients");
-const niubizSection = document.getElementById("main-clients");
-const prosegurSection = document.getElementById("main-clients");
+const claroSection = document.getElementById("claro-benefits");
+const niubizSection = document.getElementById("niubiz-benefits");
+const prosegurSection = document.getElementById("prosegur-benefits");
 
 function scrollIntoViewWithOffset(selector) {
   window.scrollTo({
     behavior: "smooth",
-    top: selector.getBoundingClientRect().top + window.pageYOffset - 100,
+    top: selector.getBoundingClientRect().top + window.pageYOffset - 130,
   });
 }
 
@@ -99,7 +99,7 @@ loadView();
 /*----CLIENTS CAROUSEL----*/
 
 let carouselNiubiz = new Swiper(".swiper-niubiz", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 20,
   grabCursor: true,
   loop: true,
@@ -122,7 +122,24 @@ let carouselClaro = new Swiper(".swiper-claro", {
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-    // reverseDirection: true,
+    reverseDirection: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+});
+
+let carouselProsegur = new Swiper(".swiper-prosegur", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    reverseDirection: true,
   },
   pagination: {
     el: ".swiper-pagination",

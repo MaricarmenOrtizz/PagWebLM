@@ -1046,12 +1046,21 @@ h1 {
   height: 28rem;
   margin-bottom: 4rem;
 }
+.services-benefits.right {
+  flex-direction: row-reverse;
+}
 .services-benefits .benefits-info {
   width: 60%;
   height: 100%;
   background-color: mediumseagreen;
   padding: 3rem;
+}
+.services-benefits .benefits-info.left {
   border-radius: 0 1rem 1rem 0;
+}
+.services-benefits .benefits-info.right {
+  border-radius: 1rem 0 0 1rem;
+  background-color: black;
 }
 .services-benefits .benefits-info h2 {
   font-size: 2rem;
@@ -1068,9 +1077,14 @@ h1 {
   margin: 0 3rem;
 }
 .services-benefits .clients-carousel h2 {
-  color: mediumseagreen;
   text-align: center;
   margin-bottom: 1.5rem;
+}
+.services-benefits .clients-carousel.right h2 {
+  color: #000;
+}
+.services-benefits .clients-carousel.left h2 {
+  color: mediumseagreen;
 }
 .services-benefits .clients-carousel .swiper-wrapper {
   margin-bottom: 2.5rem;
