@@ -68,6 +68,7 @@ h1 {
             font-weight: 500;
             &:hover {
               transform: scale(1.1);
+              cursor: pointer;
             }
           }
         }
@@ -127,6 +128,7 @@ h1 {
       font-weight: 500;
       &:hover {
         transform: scale(1.1);
+        cursor: pointer;
       }
     }
   }
@@ -306,6 +308,7 @@ h1 {
             transform: scale(1.1);
             background-color: #ffffff48;
             box-shadow: 0 0 1rem rgb(255, 255, 255);
+            cursor: pointer;
           }
         }
       }

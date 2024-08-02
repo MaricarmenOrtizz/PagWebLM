@@ -178,6 +178,7 @@ h1 {
 }
 .partners-section .partners-container .swiper-wrapper .partner-card .partner-content .btn-partner:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 .partners-section .partners-container .swiper-pagination .swiper-pagination-bullet-active {
   background-color: mediumseagreen;
@@ -232,6 +233,7 @@ h1 {
 }
 .aboutUs .about-us-content .btn-aboutUs:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 .aboutUs figure {
   height: 100%;
@@ -406,6 +408,7 @@ h1 {
   transform: scale(1.1);
   background-color: rgba(255, 255, 255, 0.2823529412);
   box-shadow: 0 0 1rem rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .introduction-section {
@@ -825,7 +828,27 @@ h1 {
   top: -5rem;
   left: 0;
 }
+.hero-section-services h1 {
+  color: rgba(255, 0, 0, 0);
+  transition: 0.5s;
+  animation: textColor 2s ease infinite;
+  width: 100%;
+  padding: 1rem 0;
+  height: fit-content;
+  background-image: linear-gradient(90deg, #fff 50%, #fff 0);
+  background-size: 200% 100%;
+  background-clip: text, padding-box;
+  -webkit-background-clip: text, padding-box;
+}
 
+@keyframes textColor {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 .slider__navi {
   position: absolute;
   top: 50%;
@@ -892,28 +915,25 @@ h1 {
 }
 .flex__container .flex__item .flex__content {
   margin-left: 120px;
-  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  height: 70%;
   opacity: 1;
   transform: translate3d(0, 0, 0);
   transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
 }
-.flex__container .flex__item .flex__content .text--sub {
-  font-size: 12px;
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
 .flex__container .flex__item .flex__content .text--big {
-  font-size: 7.5em;
+  font-size: 5rem;
   font-weight: 700;
-  line-height: 110px;
-  margin-left: -8px;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  height: fit-content;
 }
 .flex__container .flex__item .flex__content .text--normal {
-  font-size: 13px;
   color: rgba(255, 255, 255, 0.8);
-  line-height: 22px;
-  margin-top: 25px;
+  line-height: 2;
 }
 .flex__container .flex__item .text__background {
   position: absolute;
@@ -947,6 +967,7 @@ h1 {
   opacity: 0;
   position: relative;
   overflow: hidden;
+  background-color: #000;
 }
 .flex__container .flex__item--right {
   width: 35%;
@@ -963,8 +984,8 @@ h1 {
 }
 
 /* Piplup */
-.flex--piplup .flex__item--left {
-  background: #3e9fe6;
+.flex--piplup .flex__item--left h1 {
+  background-image: linear-gradient(90deg, #5600c0 50%, #fff 0);
 }
 
 .flex--piplup .flex__item--right {
@@ -975,8 +996,8 @@ h1 {
 }
 
 /* Pikachu */
-.flex--pikachu .flex__item--left {
-  background: rgb(0, 0, 0);
+.flex--pikachu .flex__item--left h1 {
+  background-image: linear-gradient(90deg, #3e9fe6 50%, #fff 0);
 }
 
 .flex--pikachu .flex__item--right {
@@ -986,9 +1007,14 @@ h1 {
   background-position: center;
 }
 
+.flex__item--right .item-shadow {
+  background: linear-gradient(rgb(60, 60, 60), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  height: 100%;
+}
+
 /* Blaziken */
-.flex--blaziken .flex__item--left {
-  background: #f64f37;
+.flex--blaziken .flex__item--left h1 {
+  background-image: linear-gradient(90deg, #ff2115 50%, #fff 0);
 }
 
 .flex--blaziken .flex__item--right {
@@ -999,8 +1025,8 @@ h1 {
 }
 
 /* Dialga */
-.flex--dialga .flex__item--left {
-  background: #fe715b;
+.flex--dialga .flex__item--left h1 {
+  background-image: linear-gradient(90deg, #ff2115 50%, #fff 0);
 }
 
 .flex--dialga .flex__item--right {
@@ -1011,8 +1037,8 @@ h1 {
 }
 
 /* Zekrom */
-.flex--zekrom .flex__item--left {
-  background: #424242;
+.flex--zekrom .flex__item--left h1 {
+  background-image: linear-gradient(90deg, #ffdc15 50%, #fff 0);
 }
 
 .flex--zekrom .flex__item--right {

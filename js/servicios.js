@@ -5,20 +5,20 @@ const slideNav = document.getElementsByClassName("slide-nav");
 let slideIndex = 0;
 let slideTimer = null;
 
-function showSlideAnimation(slide){
+function showSlideAnimation(slide) {
   $(".slider__warpper")
-      .find(".flex__container[data-slide=" + slide + "]")
-      .addClass("flex--preStart");
-    $(".flex--active").addClass("animate--end");
+    .find(".flex__container[data-slide=" + slide + "]")
+    .addClass("flex--preStart");
+  $(".flex--active").addClass("animate--end");
 
-    setTimeout(function () {
-      $(".flex--preStart")
-        .removeClass("animate--start flex--preStart")
-        .addClass("flex--active");
-      $(".animate--end")
-        .addClass("animate--start")
-        .removeClass("animate--end flex--active");
-    }, 1000);
+  setTimeout(function () {
+    $(".flex--preStart")
+      .removeClass("animate--start flex--preStart")
+      .addClass("flex--active");
+    $(".animate--end")
+      .addClass("animate--start")
+      .removeClass("animate--end flex--active");
+  }, 1000);
 }
 
 function autoPlayHeroSection(i) {
@@ -35,7 +35,7 @@ function autoPlayHeroSection(i) {
       slideIndex++;
       autoPlayHeroSection(slideIndex);
     }, 5000);
-  }else{
+  } else {
     slideIndex = 0;
     clearTimeout(slideTimer);
     autoPlayHeroSection(slideIndex);
@@ -48,7 +48,7 @@ $(".slide-nav").on("click", function (e) {
   e.preventDefault();
   var current = $(".flex--active").data("slide"),
     next = $(this).data("slide");
-  
+
   slideIndex = next - 1;
 
   $(".slide-nav").removeClass("active");
@@ -73,23 +73,25 @@ function scrollIntoViewWithOffset(selector) {
   });
 }
 
-function loadView(){
-  const redirectToClaro = Boolean(sessionStorage.getItem('redirectToClaro'));
-  const redirectToNiubiz = Boolean(sessionStorage.getItem('redirectToNiubiz'));
-  const redirectToProsegur = Boolean(sessionStorage.getItem('redirectToProsegur'));
-  
-  if(redirectToClaro){
-    sessionStorage.setItem("redirectToClaro", '');
+function loadView() {
+  const redirectToClaro = Boolean(sessionStorage.getItem("redirectToClaro"));
+  const redirectToNiubiz = Boolean(sessionStorage.getItem("redirectToNiubiz"));
+  const redirectToProsegur = Boolean(
+    sessionStorage.getItem("redirectToProsegur")
+  );
+
+  if (redirectToClaro) {
+    sessionStorage.setItem("redirectToClaro", "");
     scrollIntoViewWithOffset(claroSection);
   }
 
-  if(redirectToNiubiz){
-    sessionStorage.setItem("redirectToNiubiz", '');
+  if (redirectToNiubiz) {
+    sessionStorage.setItem("redirectToNiubiz", "");
     scrollIntoViewWithOffset(niubizSection);
   }
 
-  if(redirectToProsegur){
-    sessionStorage.setItem("redirectToProsegur", '');
+  if (redirectToProsegur) {
+    sessionStorage.setItem("redirectToProsegur", "");
     scrollIntoViewWithOffset(prosegurSection);
   }
 }
