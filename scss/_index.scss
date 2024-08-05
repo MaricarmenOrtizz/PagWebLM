@@ -279,7 +279,7 @@ h1 {
       display: flex;
       height: 100%;
       gap: 4rem;
-      h2{
+      h2 {
         font-size: 2.5rem;
       }
       .hiring-content-right {
@@ -311,6 +311,52 @@ h1 {
             cursor: pointer;
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sedesLozamora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3rem 3rem 3rem;
+    height: 100%;
+    background-color: #c1c1c1;
+    .sedes-left {
+      width: 100%;
+      .sedes-left-content {
+        padding: 3rem 0;
+        .sede-info-container {
+          border-radius: 1rem;
+          #sede-img {
+            border-radius: 1rem 0 0 1rem;
+          }
+        }
+      }
+    }
+
+    .mapPeru {
+      width: 100%;
+      #P-LIMA {
+        top: 62%;
+        left: 39%;
+      }
+
+      #P-ICA {
+        top: 75%;
+        left: 41.5%;
+      }
+
+      #P-TRUJILLO {
+        top: 43%;
+        left: 30%;
+      }
+
+      #P-CHICLAYO {
+        top: 34.5%;
+        left: 25.5%;
       }
     }
   }
