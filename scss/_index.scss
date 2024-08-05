@@ -157,7 +157,7 @@ h1 {
   display: flex;
   align-items: center;
   padding-right: 3rem;
-  height: 33rem;
+  height: 100%;
   .sedes-left {
     width: 60%;
     background-color: #c1c1c1;
@@ -316,11 +316,10 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .sedesLozamora {
     flex-direction: column;
     padding: 0 3rem 3rem 3rem;
-    height: 100%;
     background-color: #c1c1c1;
     .sedes-left {
       width: 100%;
@@ -337,6 +336,32 @@ h1 {
 
     .mapPeru {
       width: 100%;
+      #P-LIMA {
+        top: 62%;
+        left: 42%;
+      }
+
+      #P-ICA {
+        top: 75%;
+        left: 44%;
+      }
+
+      #P-TRUJILLO {
+        top: 43%;
+        left: 36%;
+      }
+
+      #P-CHICLAYO {
+        top: 34.5%;
+        left: 33%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sedesLozamora {
+    .mapPeru {
       #P-LIMA {
         top: 62%;
         left: 39%;
