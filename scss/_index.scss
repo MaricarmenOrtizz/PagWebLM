@@ -465,3 +465,30 @@ h1 {
     }
   }
 }
+
+@media only screen and (max-width: 425px) {
+  .sedesLozamora {
+    .mapPeru {
+      #P-LIMA {
+        top: 62%;
+        left: 31%;
+      }
+
+      #P-ICA {
+        top: 75%;
+        left: 35.5%;
+      }
+
+      #P-TRUJILLO {
+        top: 43%;
+        left: 16%;
+      }
+
+      #P-CHICLAYO {
+        top: 34.5%;
+        left: 9%;
+      }
+    }
+  }
+}
+
