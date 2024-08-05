@@ -467,6 +467,36 @@ h1 {
 }
 
 @media only screen and (max-width: 425px) {
+  .partners-section {
+    .partners-container {
+      .swiper-wrapper {
+        .partner-card {
+          flex-direction: column;
+          height: 100%;
+          .partner-image {
+            height: 12rem;
+            width: 100%;
+            border-radius: 1rem 1rem 0 0;
+          }
+          .partner-content {
+            padding: 1rem 2rem;
+            width: 100%;
+            text-align: center;
+            .partner-content-benefits {
+              text-align: start;
+            }
+            .btn-partner {
+              margin-top: 1.5rem;
+              position: relative;
+              right: initial;
+              bottom: initial;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .sedesLozamora {
     .mapPeru {
       #P-LIMA {

@@ -603,6 +603,29 @@ h1 {
   }
 }
 @media only screen and (max-width: 425px) {
+  .partners-section .partners-container .swiper-wrapper .partner-card {
+    flex-direction: column;
+    height: 100%;
+  }
+  .partners-section .partners-container .swiper-wrapper .partner-card .partner-image {
+    height: 12rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .partners-section .partners-container .swiper-wrapper .partner-card .partner-content {
+    padding: 1rem 2rem;
+    width: 100%;
+    text-align: center;
+  }
+  .partners-section .partners-container .swiper-wrapper .partner-card .partner-content .partner-content-benefits {
+    text-align: start;
+  }
+  .partners-section .partners-container .swiper-wrapper .partner-card .partner-content .btn-partner {
+    margin-top: 1.5rem;
+    position: relative;
+    right: initial;
+    bottom: initial;
+  }
   .sedesLozamora .mapPeru #P-LIMA {
     top: 62%;
     left: 31%;
