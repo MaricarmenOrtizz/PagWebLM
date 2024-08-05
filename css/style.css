@@ -1413,11 +1413,15 @@ footer .footer-content li {
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
-footer .footer-content li i {
-  color: mediumseagreen;
-  font-size: 1.7rem;
+footer .footer-content li .icon-box {
   width: 2rem;
   text-align: center;
+}
+footer .footer-content li .icon-box i {
+  color: mediumseagreen;
+  font-size: 1.7rem;
+  text-align: center;
+  width: 2rem;
 }
 footer .footer-content li .footer-list-text {
   border-left: 1px solid #fff;

@@ -19,12 +19,15 @@ footer {
       align-items: center;
       gap: 1rem;
       margin-bottom: 1.5rem;
-      i {
-        color: mediumseagreen;
-        font-size: 1.7rem;
+      .icon-box{
         width: 2rem;
         text-align: center;
-      }
+        i {
+        color: mediumseagreen;
+        font-size: 1.7rem;
+        text-align: center;
+        width: 2rem;
+      }}
       .footer-list-text {
         border-left: 1px solid #fff;
         padding-left: 1rem;
