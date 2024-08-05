@@ -108,6 +108,11 @@ header.sticking {
     display: block;
   }
 }
+@media only screen and (max-width: 576px) {
+  header nav {
+    padding: 1.5rem;
+  }
+}
 .hero-section {
   background-repeat: no-repeat;
   background-size: cover;
