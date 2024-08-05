@@ -268,7 +268,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 30rem;
+  height: 100%;
   .shadow-hiring {
     background-color: #000000a5;
     width: 100%;
@@ -318,9 +318,7 @@ h1 {
 
 @media only screen and (max-width: 768px) {
   .sedesLozamora {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 0 3rem 3rem 3rem;
     height: 100%;
     background-color: #c1c1c1;
@@ -357,6 +355,27 @@ h1 {
       #P-CHICLAYO {
         top: 34.5%;
         left: 25.5%;
+      }
+    }
+  }
+
+  .hiring-section {
+    .shadow-hiring {
+      .hiring-content {
+        padding: 3rem;
+        flex-direction: column;
+        gap: 2rem;
+        h2 {
+          text-align: center;
+        }
+        .hiring-content-right {
+          padding-bottom: 5rem;
+          .btn-hiring {
+            position: absolute;
+            left: calc(50% - 7rem);
+            right: inherit;
+          }
+        }
       }
     }
   }
