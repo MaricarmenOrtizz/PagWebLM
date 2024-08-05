@@ -69,7 +69,7 @@ const prosegurSection = document.getElementById("prosegur-benefits");
 function scrollIntoViewWithOffset(selector) {
   window.scrollTo({
     behavior: "smooth",
-    top: selector.getBoundingClientRect().top + window.pageYOffset - 130,
+    top: selector.getBoundingClientRect().top + window.pageYOffset - 120,
   });
 }
 

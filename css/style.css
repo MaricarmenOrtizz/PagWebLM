@@ -1218,8 +1218,62 @@ h1 {
   font-size: 1rem;
 }
 
-.trabajo-lozamora .trabajo-lozamora-content video {
-  height: 15rem;
+.job-oportunities-section {
+  padding: 0 3rem;
+}
+.job-oportunities-section h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: mediumseagreen;
+}
+.job-oportunities-section .job-oportunities-carousel {
+  width: 100%;
+}
+.job-oportunities-section .job-oportunities-carousel .swiper-wrapper {
+  margin-bottom: 2.5rem;
+}
+.job-oportunities-section .job-oportunities-carousel .swiper-wrapper .job-oportunities-card {
+  background-color: #fff;
+  border: solid 1px mediumseagreen;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  height: 40rem;
+}
+.job-oportunities-section .job-oportunities-carousel .swiper-wrapper .job-oportunities-card h4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: mediumseagreen;
+}
+.job-oportunities-section .job-oportunities-carousel .swiper-wrapper .job-oportunities-card p {
+  text-align: justify;
+}
+.job-oportunities-section .job-oportunities-carousel .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: mediumseagreen;
+}
+.job-oportunities-section .job-oportunities-carousel .swiper-pagination span {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.redirect-to-application {
+  width: 100%;
+  padding: 0 3rem;
+  margin: 4rem 0;
+  text-align: center;
+}
+.redirect-to-application #btn-application {
+  background-color: mediumseagreen;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-weight: 500;
+  transition: all ease 0.5s;
+}
+.redirect-to-application #btn-application:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 footer {
