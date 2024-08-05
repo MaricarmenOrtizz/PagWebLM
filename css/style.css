@@ -445,6 +445,7 @@ h1 {
   height: 100%;
 }
 .hiring-section .shadow-hiring .hiring-content .hiring-content-right p {
+  line-height: 2;
   font-size: 2rem;
   color: white;
   text-align: justify;
@@ -515,9 +516,14 @@ h1 {
     gap: 2rem;
   }
   .hiring-section .shadow-hiring .hiring-content h2 {
+    font-size: 2rem;
     text-align: center;
   }
   .hiring-section .shadow-hiring .hiring-content .hiring-content-right {
+    text-align: center;
+  }
+  .hiring-section .shadow-hiring .hiring-content .hiring-content-right p {
+    font-size: 1.2rem;
     text-align: center;
   }
   .hiring-section .shadow-hiring .hiring-content .hiring-content-right .btn-hiring {

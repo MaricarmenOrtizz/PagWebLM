@@ -286,6 +286,7 @@ h1 {
         position: relative;
         height: 100%;
         p {
+          line-height: 2;
           font-size: 2rem;
           color: white;
           text-align: justify;
@@ -366,10 +367,15 @@ h1 {
         flex-direction: column;
         gap: 2rem;
         h2 {
+          font-size: 2rem;
           text-align: center;
         }
         .hiring-content-right {
           text-align: center;
+          p{
+            font-size: 1.2rem;
+            text-align: center;
+          }
           .btn-hiring {
             margin-top: 2rem;
             position: relative;
