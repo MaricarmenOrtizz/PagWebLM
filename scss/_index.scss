@@ -268,7 +268,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100%;
+  height: fit-content;
   .shadow-hiring {
     background-color: #000000a5;
     width: 100%;
@@ -283,7 +283,6 @@ h1 {
         font-size: 2.5rem;
       }
       .hiring-content-right {
-        position: relative;
         height: 100%;
         p {
           line-height: 2;
@@ -292,24 +291,24 @@ h1 {
           text-align: justify;
           margin-bottom: 1.5rem;
         }
-        .btn-hiring {
-          padding: 1rem 4rem;
-          background-color: #ffffff48;
-          box-shadow: 0 0 0.3rem #ffffffc3;
-          border: none;
-          border-radius: 0.5rem;
-          color: #fff;
-          font-weight: bold;
-          font-size: 1rem;
-          transition: all ease 0.5s;
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          &:hover {
-            transform: scale(1.1);
+        .btn-hiring-container{
+          text-align: end;
+          .btn-hiring {
+            padding: 1rem 4rem;
             background-color: #ffffff48;
-            box-shadow: 0 0 1rem rgb(255, 255, 255);
-            cursor: pointer;
+            box-shadow: 0 0 0.3rem #ffffffc3;
+            border: none;
+            border-radius: 0.5rem;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all ease 0.5s;
+            &:hover {
+              transform: scale(1.1);
+              background-color: #ffffff48;
+              box-shadow: 0 0 1rem rgb(255, 255, 255);
+              cursor: pointer;
+            }
           }
         }
       }
@@ -350,12 +349,12 @@ h1 {
 
       #P-TRUJILLO {
         top: 43%;
-        left: 30%;
+        left: 31%;
       }
 
       #P-CHICLAYO {
         top: 34.5%;
-        left: 25.5%;
+        left: 26%;
       }
     }
   }
@@ -376,10 +375,8 @@ h1 {
             font-size: 1.2rem;
             text-align: center;
           }
-          .btn-hiring {
-            margin-top: 2rem;
-            position: relative;
-            right: initial;
+          .btn-hiring-container{
+            text-align: center;
           }
         }
       }

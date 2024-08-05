@@ -29,6 +29,7 @@ header nav .logo {
   height: 2.5rem;
 }
 header nav .menu {
+  padding: 0;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -423,7 +424,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100%;
+  height: fit-content;
 }
 .hiring-section .shadow-hiring {
   background-color: rgba(0, 0, 0, 0.6470588235);
@@ -441,7 +442,6 @@ h1 {
   font-size: 2.5rem;
 }
 .hiring-section .shadow-hiring .hiring-content .hiring-content-right {
-  position: relative;
   height: 100%;
 }
 .hiring-section .shadow-hiring .hiring-content .hiring-content-right p {
@@ -451,7 +451,10 @@ h1 {
   text-align: justify;
   margin-bottom: 1.5rem;
 }
-.hiring-section .shadow-hiring .hiring-content .hiring-content-right .btn-hiring {
+.hiring-section .shadow-hiring .hiring-content .hiring-content-right .btn-hiring-container {
+  text-align: end;
+}
+.hiring-section .shadow-hiring .hiring-content .hiring-content-right .btn-hiring-container .btn-hiring {
   padding: 1rem 4rem;
   background-color: rgba(255, 255, 255, 0.2823529412);
   box-shadow: 0 0 0.3rem rgba(255, 255, 255, 0.7647058824);
@@ -461,11 +464,8 @@ h1 {
   font-weight: bold;
   font-size: 1rem;
   transition: all ease 0.5s;
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
-.hiring-section .shadow-hiring .hiring-content .hiring-content-right .btn-hiring:hover {
+.hiring-section .shadow-hiring .hiring-content .hiring-content-right .btn-hiring-container .btn-hiring:hover {
   transform: scale(1.1);
   background-color: rgba(255, 255, 255, 0.2823529412);
   box-shadow: 0 0 1rem rgb(255, 255, 255);
@@ -504,11 +504,11 @@ h1 {
   }
   .sedesLozamora .mapPeru #P-TRUJILLO {
     top: 43%;
-    left: 30%;
+    left: 31%;
   }
   .sedesLozamora .mapPeru #P-CHICLAYO {
     top: 34.5%;
-    left: 25.5%;
+    left: 26%;
   }
   .hiring-section .shadow-hiring .hiring-content {
     padding: 3rem;
@@ -526,10 +526,8 @@ h1 {
     font-size: 1.2rem;
     text-align: center;
   }
-  .hiring-section .shadow-hiring .hiring-content .hiring-content-right .btn-hiring {
-    margin-top: 2rem;
-    position: relative;
-    right: initial;
+  .hiring-section .shadow-hiring .hiring-content .hiring-content-right .btn-hiring-container {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 576px) {
