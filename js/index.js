@@ -58,12 +58,14 @@ function showSedeInfo(regionName) {
   `;
 }
 
-function setRegionStyle(region, display) {
+function setRegionStyle(region, region2, display) {
   for (const sede of sedes) {
     sede.classList.remove("active");
   }
-
+  
   region.classList.add("active");
+
+  if(region2) region2.classList.add("active");
 
   sedeContainer.style.display = display;
 }
@@ -72,20 +74,19 @@ function autoPlayRegions(i) {
   if (i < 4) {
     switch (i) {
       case 0:
-        setRegionStyle(regionLambayeque, "flex");
+        setRegionStyle(regionLambayeque, null, "flex");
         showSedeInfo("Chiclayo");
         break;
       case 1:
-        setRegionStyle(regionLaLibertad, "flex");
+        setRegionStyle(regionLaLibertad, null, "flex");
         showSedeInfo("Trujillo");
         break;
       case 2:
-        setRegionStyle(regionLimaMetropolitana, "flex");
-        setRegionStyle(regionLimaProvincia, "flex");
+        setRegionStyle(regionLimaMetropolitana,regionLimaProvincia, "flex");
         showSedeInfo("Lima");
         break;
       case 3:
-        setRegionStyle(regionIca, "flex");
+        setRegionStyle(regionIca, null, "flex");
         showSedeInfo("Ica");
         break;
       default:

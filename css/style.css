@@ -526,6 +526,76 @@ h1 {
     right: initial;
   }
 }
+@media only screen and (max-width: 576px) {
+  .partners-section {
+    padding: 1.5rem;
+  }
+  .aboutUs {
+    padding: 0 1.5rem;
+    flex-direction: column;
+    height: 100%;
+  }
+  .aboutUs .about-us-content {
+    width: 100%;
+  }
+  .aboutUs .about-us-content .btn-aboutUs {
+    position: relative;
+    margin-top: 2rem;
+  }
+  .aboutUs .about-us-content .btn-aboutUs:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .aboutUs figure {
+    width: 100%;
+  }
+  .sedesLozamora {
+    flex-direction: column;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    height: 100%;
+  }
+  .sedesLozamora .sedes-left {
+    width: 100%;
+  }
+  .sedesLozamora .sedes-left .sedes-left-content {
+    padding: 2rem 0;
+  }
+  .sedesLozamora .sedes-left .sedes-left-content .sedes-titulo {
+    font-size: 2rem;
+  }
+  .sedesLozamora .sedes-left .sedes-left-content .sede-info-container {
+    flex-direction: column;
+  }
+  .sedesLozamora .sedes-left .sedes-left-content .sede-info-container #sede-img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .sedesLozamora .sedes-left .sedes-left-content .sede-info-container .sede-info-text {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+  .sedesLozamora .sedes-left .sedes-left-content .sede-info-container .sede-info-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .sedesLozamora .mapPeru #P-LIMA {
+    top: 62%;
+    left: 36%;
+  }
+  .sedesLozamora .mapPeru #P-ICA {
+    top: 75%;
+    left: 40%;
+  }
+  .sedesLozamora .mapPeru #P-TRUJILLO {
+    top: 43%;
+    left: 26%;
+  }
+  .sedesLozamora .mapPeru #P-CHICLAYO {
+    top: 34.5%;
+    left: 20%;
+  }
+}
 .introduction-section {
   padding: 2rem 3rem;
   text-align: justify;
