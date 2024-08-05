@@ -8,6 +8,7 @@ let carouselTeams = new Swiper(".swiper-teams", {
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
+    pauseOnMouseEnter: true
   },
   navigation: {
     nextEl: '.swiper-button-next',

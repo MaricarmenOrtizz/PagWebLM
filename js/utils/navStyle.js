@@ -1,6 +1,14 @@
 const navLinksElements = document.querySelectorAll('.menu-item-link');
 const windowPathName = window.location.pathname;
 
+const btnNavbar = document.getElementById("btn-navbar");
+const menu = document.getElementsByClassName("menu");
+
+btnNavbar.addEventListener("click", () => {
+  if (menu[0].classList.contains("active")) menu[0].classList.remove("active");
+  else menu[0].classList.add("active");
+});
+
 navLinksElements.forEach(e => {
   const navLinkPathName = new URL(e.href).pathname;
   if(windowPathName === navLinkPathName){

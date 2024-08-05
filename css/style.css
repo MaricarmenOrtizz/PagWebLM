@@ -20,6 +20,11 @@ header nav {
   width: 100%;
   padding: 1.5rem 3rem;
 }
+header nav .logo-sm {
+  z-index: 10;
+  display: none;
+  height: 2.5rem;
+}
 header nav .logo {
   height: 2.5rem;
 }
@@ -27,16 +32,20 @@ header nav .menu {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 2rem;
 }
 header nav .menu .menu-item .menu-item-link {
   text-decoration: none;
   color: #ffffff;
 }
+header nav .menu .menu-item .menu-item-link:hover {
+  border-bottom: 1px solid #fff;
+}
 header nav .menu .menu-item .menu-item-link.active {
   border-bottom: 1px solid #fff;
 }
-header nav #intranet-link {
+header nav .menu #intranet-link {
   text-decoration: none;
   background-color: mediumseagreen;
   padding: 0.5rem 2rem;
@@ -49,14 +58,56 @@ header nav #intranet-link {
   transition: all 0.5s ease;
   font-weight: 500;
 }
-header nav #intranet-link:hover {
+header nav .menu #intranet-link:hover {
   background-color: rgb(22, 149, 79);
   box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5921568627);
+}
+header nav #btn-navbar {
+  z-index: 10;
+  display: none;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  border-radius: 1rem;
+  transition: all 0.5s ease;
+}
+header nav #btn-navbar:hover {
+  cursor: pointer;
+  color: #b6b6b6;
 }
 header.sticking {
   background-color: rgb(0, 0, 0);
 }
 
+@media only screen and (max-width: 768px) {
+  header nav .logo-sm {
+    display: block;
+  }
+  header nav .logo {
+    display: none;
+  }
+  header nav .menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.549);
+    backdrop-filter: blur(3rem);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  header nav .menu.active {
+    display: flex;
+  }
+  header nav #btn-navbar {
+    display: block;
+  }
+}
 .hero-section {
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,6 +134,10 @@ header.sticking {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+.hero-section .shadow .slogan h1 {
+  text-align: center;
+  padding: 0 3rem;
 }
 
 @keyframes banner-index {

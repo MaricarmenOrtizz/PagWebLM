@@ -4,7 +4,7 @@ import { sedesInfo } from "./data.js";
 /*---PARTNERS---*/
 
 let carouselPartners = new Swiper(".swiper-partners", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 20,
   grabCursor: true,
   loop: true,
@@ -17,6 +17,11 @@ let carouselPartners = new Swiper(".swiper-partners", {
     clickable: true,
     dynamicBullets: true,
   },
+  breakpoints: {
+    769: {
+      slidesPerView: 2,
+    }
+  }
 });
 
 /*---MAPA---*/
