@@ -513,12 +513,12 @@ h1 {
     text-align: center;
   }
   .hiring-section .shadow-hiring .hiring-content .hiring-content-right {
-    padding-bottom: 5rem;
+    text-align: center;
   }
   .hiring-section .shadow-hiring .hiring-content .hiring-content-right .btn-hiring {
-    position: absolute;
-    left: calc(50% - 7rem);
-    right: inherit;
+    margin-top: 2rem;
+    position: relative;
+    right: initial;
   }
 }
 .introduction-section {
