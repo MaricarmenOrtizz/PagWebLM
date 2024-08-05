@@ -35,6 +35,7 @@ footer {
           text-decoration: none;
           color: #fff;
           font-weight: 200;
+          text-wrap: wrap;
         }
       }
     }
@@ -71,6 +72,18 @@ footer {
 
 @media only screen and (max-width: 768px) {
   footer {
+    .footer-content {
+      width: 100%;
+      margin-top: 2.5rem;
+      padding: 0;
+      li {
+        .footer-list-text {
+          overflow: hidden;
+          text-wrap: wrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
     .footer-copyright {
       flex-direction: column;
       gap: 2rem;
@@ -78,6 +91,7 @@ footer {
         text-align: center;
       }
       .social-media {
+        padding: 0;
         position: relative;
         right: initial;
       }

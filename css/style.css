@@ -1425,6 +1425,7 @@ footer .footer-content li .footer-list-text a {
   text-decoration: none;
   color: #fff;
   font-weight: 200;
+  text-wrap: wrap;
 }
 footer .footer-copyright {
   width: 100%;
@@ -1454,6 +1455,16 @@ footer .footer-copyright .social-media li a i {
 }
 
 @media only screen and (max-width: 768px) {
+  footer .footer-content {
+    width: 100%;
+    margin-top: 2.5rem;
+    padding: 0;
+  }
+  footer .footer-content li .footer-list-text {
+    overflow: hidden;
+    text-wrap: wrap;
+    text-overflow: ellipsis;
+  }
   footer .footer-copyright {
     flex-direction: column;
     gap: 2rem;
@@ -1462,6 +1473,7 @@ footer .footer-copyright .social-media li a i {
     text-align: center;
   }
   footer .footer-copyright .social-media {
+    padding: 0;
     position: relative;
     right: initial;
   }
