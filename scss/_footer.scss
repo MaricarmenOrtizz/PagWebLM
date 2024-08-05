@@ -101,3 +101,9 @@ footer {
     }
   }
 }
+
+@media only screen and (max-width: 576px) {
+  footer {
+    padding: 1.5rem;
+  }
+}

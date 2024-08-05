@@ -1487,5 +1487,10 @@ footer .footer-copyright .social-media li a i {
     right: initial;
   }
 }
+@media only screen and (max-width: 576px) {
+  footer {
+    padding: 1.5rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
