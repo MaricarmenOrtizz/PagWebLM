@@ -938,7 +938,7 @@ h1 {
   transform: scale(1.1);
 }
 .introduction-section .history h2 {
-  color: #00B373;
+  color: #00b373;
   font-size: 2rem;
 }
 
@@ -952,11 +952,11 @@ h1 {
 .time-line::after {
   content: "";
   position: absolute;
-  width: calc(100% - 15rem);
+  width: 80%;
   height: 0.35rem;
-  background-color: #00B373;
+  background-color: #00b373;
   top: 3rem;
-  left: 7.5rem;
+  left: 10%;
   animation: moveline 6s infinite forwards;
 }
 @keyframes moveline {
@@ -964,7 +964,7 @@ h1 {
     width: 0;
   }
   100% {
-    width: calc(100% - 15rem);
+    width: 80%;
   }
 }
 .time-line .container .container-time-mark {
@@ -981,7 +981,7 @@ h1 {
 .time-line .container .container-time-mark .time-mark-dot {
   width: 1.2rem;
   height: 1.2rem;
-  background-color: #00B373;
+  background-color: #00b373;
   border-radius: 50%;
 }
 .time-line .container .container-time-text {
@@ -1015,7 +1015,7 @@ h1 {
   left: calc(50% - 5rem);
   width: 10rem;
   height: 0.4rem;
-  background-color: #00B373;
+  background-color: #00b373;
 }
 .mission-vision .mission-vision-card {
   display: flex;
@@ -1027,7 +1027,7 @@ h1 {
   height: 5rem;
 }
 .mission-vision .mission-vision-card h4 {
-  color: #00B373;
+  color: #00b373;
   font-size: 1.5rem;
 }
 .mission-vision .mission-vision-card p {
@@ -1039,7 +1039,7 @@ h1 {
   margin-bottom: 4rem;
 }
 .teams-carousel h2 {
-  color: #00B373;
+  color: #00b373;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 4rem;
@@ -1084,7 +1084,7 @@ h1 {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .teams-carousel .swiper-teams .swiper-button-prev {
-  color: #00B373;
+  color: #00b373;
   top: calc(50% + 3rem);
   left: 3rem;
   font-weight: bold;
@@ -1094,7 +1094,7 @@ h1 {
   transform: scale(1.1);
 }
 .teams-carousel .swiper-teams .swiper-button-next {
-  color: #00B373;
+  color: #00b373;
   top: calc(50% + 3rem);
   right: 3rem;
   font-weight: bold;
@@ -1109,7 +1109,7 @@ h1 {
   padding: 3rem;
   justify-content: space-between;
   align-items: center;
-  background-color: #00B373;
+  background-color: #00b373;
 }
 .teams .teams-text h2 {
   color: white;
@@ -1147,7 +1147,7 @@ h1 {
   width: 100%;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
-  background-color: #00B373;
+  background-color: #00b373;
   pointer-events: auto;
 }
 .teams .our-teams .teams-shutters:before {
@@ -1332,7 +1332,7 @@ h1 {
     flex-direction: column;
   }
   .time-line::after {
-    height: calc(100% - 15rem);
+    height: 80%;
     width: 0.35rem;
     left: 1rem;
   }
@@ -1341,7 +1341,7 @@ h1 {
       height: 0;
     }
     100% {
-      height: calc(100% - 16rem);
+      height: 80%;
     }
   }
   .time-line .container .container-time-mark {
@@ -1389,19 +1389,6 @@ h1 {
   }
 }
 @media only screen and (max-width: 576px) {
-  .time-line::after {
-    height: calc(100% - 26rem);
-    width: 0.35rem;
-    left: 1rem;
-  }
-  @keyframes moveline {
-    0% {
-      height: 0;
-    }
-    100% {
-      height: calc(100% - 26rem);
-    }
-  }
   .time-line .container .container-time-text {
     gap: 2rem;
     flex-direction: column;
@@ -1420,21 +1407,20 @@ h1 {
   }
 }
 @media only screen and (max-width: 425px) {
-  .time-line::after {
-    height: calc(100% - 26rem);
-    width: 0.35rem;
-    left: 1rem;
+  .teams-carousel .swiper-teams {
+    width: 65%;
   }
-  @keyframes moveline {
-    0% {
-      height: 0;
-    }
-    100% {
-      height: calc(100% - 26rem);
-    }
+}
+@media only screen and (max-width: 375px) {
+  .teams-carousel h2 {
+    margin-bottom: 1rem;
   }
   .teams-carousel .swiper-teams {
-    width: 40%;
+    width: 60%;
+    height: fit-content;
+  }
+  .teams-carousel .swiper-teams .swiper-wrapper .team-card {
+    height: 15rem;
   }
 }
 .hero-section-services {

@@ -27,7 +27,7 @@
   }
   .history {
     h2 {
-      color: #00B373;
+      color: #00b373;
       font-size: 2rem;
     }
   }
@@ -42,18 +42,18 @@
   &::after {
     content: "";
     position: absolute;
-    width: calc(100% - 15rem);
+    width: 80%;
     height: 0.35rem;
-    background-color: #00B373;
+    background-color: #00b373;
     top: 3rem;
-    left: 7.5rem;
+    left: 10%;
 
     @keyframes moveline {
       0% {
         width: 0;
       }
       100% {
-        width: calc(100% - 15rem);
+        width: 80%;
       }
     }
     animation: moveline 6s infinite forwards;
@@ -72,7 +72,7 @@
       .time-mark-dot {
         width: 1.2rem;
         height: 1.2rem;
-        background-color: #00B373;
+        background-color: #00b373;
         border-radius: 50%;
       }
     }
@@ -108,7 +108,7 @@
     left: calc(50% - 5rem);
     width: 10rem;
     height: 0.4rem;
-    background-color: #00B373;
+    background-color: #00b373;
   }
   .mission-vision-card {
     display: flex;
@@ -119,10 +119,10 @@
       height: 5rem;
     }
     h4 {
-      color: #00B373;
+      color: #00b373;
       font-size: 1.5rem;
     }
-    p{
+    p {
       text-align: center;
     }
   }
@@ -132,7 +132,7 @@
   position: relative;
   margin-bottom: 4rem;
   h2 {
-    color: #00B373;
+    color: #00b373;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 4rem;
@@ -158,7 +158,7 @@
           border-radius: 1rem 1rem 0 0;
           margin: 0;
         }
-        .team-card-text{
+        .team-card-text {
           height: 20%;
           display: flex;
           justify-content: center;
@@ -169,29 +169,29 @@
         }
       }
     }
-    .swiper-slide-active{
+    .swiper-slide-active {
       transition: all 0.5s ease;
       transform: scale(1.2);
       z-index: 10;
       box-shadow: 0 0 20px #00000033;
     }
     .swiper-button-prev {
-      color: #00B373;
+      color: #00b373;
       top: calc(50% + 3rem);
       left: 3rem;
       font-weight: bold;
       transition: all ease 0.5s;
-      &:hover{
+      &:hover {
         transform: scale(1.1);
       }
     }
     .swiper-button-next {
-      color: #00B373;
+      color: #00b373;
       top: calc(50% + 3rem);
       right: 3rem;
       font-weight: bold;
       transition: all ease 0.5s;
-      &:hover{
+      &:hover {
         transform: scale(1.1);
       }
     }
@@ -214,7 +214,7 @@ $images: url(../img/team_gerencia.JPG) url(../img/team-rrhh.JPG)
   padding: 3rem;
   justify-content: space-between;
   align-items: center;
-  background-color: #00B373;
+  background-color: #00b373;
   .teams-text {
     h2 {
       color: white;
@@ -254,7 +254,7 @@ $images: url(../img/team_gerencia.JPG) url(../img/team-rrhh.JPG)
         width: 100%;
         left: 50%;
         transform: translate3d(-50%, 0, 0);
-        background-color: #00B373;
+        background-color: #00b373;
         pointer-events: auto;
       }
       &:before {
@@ -394,21 +394,20 @@ $images: url(../img/team_gerencia.JPG) url(../img/team-rrhh.JPG)
   }
 }
 
-
 @media only screen and (max-width: 900px) {
   .time-line {
     flex-direction: column;
     &::after {
-      height: calc(100% - 15rem);
+      height: 80%;
       width: 0.35rem;
       left: 1rem;
-  
+
       @keyframes moveline {
         0% {
           height: 0;
         }
         100% {
-          height: calc(100% - 16rem);
+          height: 80%;
         }
       }
     }
@@ -438,7 +437,7 @@ $images: url(../img/team_gerencia.JPG) url(../img/team-rrhh.JPG)
     .swiper-teams {
       width: 75%;
       padding-right: 1rem;
-      .swiper-slide-active{
+      .swiper-slide-active {
         transition: none;
         transform: none;
         z-index: 1;
@@ -452,7 +451,7 @@ $images: url(../img/team_gerencia.JPG) url(../img/team-rrhh.JPG)
 @media only screen and (max-width: 768px) {
   .mission-vision {
     flex-direction: column;
-    .mission-vision-card{
+    .mission-vision-card {
       margin-bottom: 1.5rem;
     }
   }
@@ -460,29 +459,15 @@ $images: url(../img/team_gerencia.JPG) url(../img/team-rrhh.JPG)
   .teams-carousel {
     .swiper-teams {
       padding-right: 0;
-      .swiper-slide-active{
+      .swiper-slide-active {
         margin: 0;
       }
     }
   }
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 576px) {
   .time-line {
-    &::after {
-      height: calc(100% - 26rem);
-      width: 0.35rem;
-      left: 1rem;
-  
-      @keyframes moveline {
-        0% {
-          height: 0;
-        }
-        100% {
-          height: calc(100% - 26rem);
-        }
-      }
-    }
     .container {
       .container-time-text {
         gap: 2rem;
@@ -507,27 +492,27 @@ $images: url(../img/team_gerencia.JPG) url(../img/team-rrhh.JPG)
   }
 }
 
-@media only screen and (max-width: 425px){
-  .time-line {
-    &::after {
-      height: calc(100% - 26rem);
-      width: 0.35rem;
-      left: 1rem;
-  
-      @keyframes moveline {
-        0% {
-          height: 0;
-        }
-        100% {
-          height: calc(100% - 26rem);
-        }
-      }
-    }
-  }
-
+@media only screen and (max-width: 425px) {
   .teams-carousel {
     .swiper-teams {
-      width: 40%;
+      width: 65%;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .teams-carousel {
+    h2{
+      margin-bottom: 1rem;
+    }
+    .swiper-teams {
+      width: 60%;
+      height: fit-content;
+      .swiper-wrapper {
+        .team-card {
+          height: 15rem;
+        }
+      }
     }
   }
 }
