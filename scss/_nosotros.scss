@@ -522,12 +522,12 @@ $images: url("../img/team_gerencia.JPG") url("../img/team-rrhh.JPG")
 @media only screen and (max-width: 425px) {
   .teams-carousel {
     .swiper-teams {
-      width: 65%;
+      width: 85%;
       .swiper-button-prev {
-        top: calc(50% + 2rem);
+        display: none;
       }
       .swiper-button-next {
-        top: calc(50% + 2rem);
+        display: none;
       }
     }
   }
@@ -545,20 +545,10 @@ $images: url("../img/team_gerencia.JPG") url("../img/team-rrhh.JPG")
       margin-bottom: 1rem;
     }
     .swiper-teams {
-      width: 60%;
-      height: fit-content;
       .swiper-wrapper {
         .team-card {
           height: 15rem;
         }
-      }
-      .swiper-button-prev {
-        top: calc(50% + 1rem);
-        scale: (0.9);
-      }
-      .swiper-button-next {
-        top: calc(50% + 1rem);
-        scale: (0.9);
       }
     }
   }

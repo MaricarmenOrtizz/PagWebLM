@@ -1434,13 +1434,13 @@ h1 {
 }
 @media only screen and (max-width: 425px) {
   .teams-carousel .swiper-teams {
-    width: 65%;
+    width: 85%;
   }
   .teams-carousel .swiper-teams .swiper-button-prev {
-    top: calc(50% + 2rem);
+    display: none;
   }
   .teams-carousel .swiper-teams .swiper-button-next {
-    top: calc(50% + 2rem);
+    display: none;
   }
   .corporative-events-section .corporative-events-container {
     height: 17rem;
@@ -1450,20 +1450,8 @@ h1 {
   .teams-carousel h2 {
     margin-bottom: 1rem;
   }
-  .teams-carousel .swiper-teams {
-    width: 60%;
-    height: fit-content;
-  }
   .teams-carousel .swiper-teams .swiper-wrapper .team-card {
     height: 15rem;
-  }
-  .teams-carousel .swiper-teams .swiper-button-prev {
-    top: calc(50% + 1rem);
-    scale: 0.9;
-  }
-  .teams-carousel .swiper-teams .swiper-button-next {
-    top: calc(50% + 1rem);
-    scale: 0.9;
   }
 }
 .hero-section-services {
