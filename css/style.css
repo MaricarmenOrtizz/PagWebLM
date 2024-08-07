@@ -1436,6 +1436,12 @@ h1 {
   .teams-carousel .swiper-teams {
     width: 65%;
   }
+  .teams-carousel .swiper-teams .swiper-button-prev {
+    top: calc(50% + 2rem);
+  }
+  .teams-carousel .swiper-teams .swiper-button-next {
+    top: calc(50% + 2rem);
+  }
   .corporative-events-section .corporative-events-container {
     height: 17rem;
   }
@@ -1450,6 +1456,14 @@ h1 {
   }
   .teams-carousel .swiper-teams .swiper-wrapper .team-card {
     height: 15rem;
+  }
+  .teams-carousel .swiper-teams .swiper-button-prev {
+    top: calc(50% + 1rem);
+    scale: 0.9;
+  }
+  .teams-carousel .swiper-teams .swiper-button-next {
+    top: calc(50% + 1rem);
+    scale: 0.9;
   }
 }
 .hero-section-services {
