@@ -1049,7 +1049,7 @@ h1 {
   position: unset;
 }
 .teams-carousel .swiper-teams .swiper-wrapper {
-  margin: 2.5rem 0 0 0;
+  margin: 2.5rem 0;
 }
 .teams-carousel .swiper-teams .swiper-wrapper .team-card {
   height: 20rem;
@@ -1104,25 +1104,29 @@ h1 {
   transform: scale(1.1);
 }
 
-.teams {
-  display: flex;
+.corporative-events-section {
   padding: 3rem;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
+  gap: 3rem;
   background-color: #00b373;
 }
-.teams .teams-text h2 {
+.corporative-events-section h2 {
   color: white;
   font-size: 4rem;
+  text-align: center;
 }
-.teams .our-teams {
+.corporative-events-section h2 .text-big {
+  font-size: 6rem;
+}
+.corporative-events-section .corporative-events-container {
   height: 25rem;
   width: 70%;
   overflow: hidden;
   position: relative;
   display: flex;
 }
-.teams .our-teams .teams-shutters {
+.corporative-events-section .corporative-events-container .corporative-events-shutters {
   position: absolute;
   height: 150vmax;
   width: 150vmax;
@@ -1140,7 +1144,7 @@ h1 {
     transform: rotate(180deg);
   }
 }
-.teams .our-teams .teams-shutters:before, .teams .our-teams .teams-shutters:after {
+.corporative-events-section .corporative-events-container .corporative-events-shutters:before, .corporative-events-section .corporative-events-container .corporative-events-shutters:after {
   content: "";
   position: absolute;
   height: 100%;
@@ -1150,7 +1154,7 @@ h1 {
   background-color: #00b373;
   pointer-events: auto;
 }
-.teams .our-teams .teams-shutters:before {
+.corporative-events-section .corporative-events-container .corporative-events-shutters:before {
   bottom: 50%;
   animation: openTop 5s infinite;
 }
@@ -1172,7 +1176,7 @@ h1 {
     animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
   }
 }
-.teams .our-teams .teams-shutters:after {
+.corporative-events-section .corporative-events-container .corporative-events-shutters:after {
   top: 50%;
   animation: openBottom 5s infinite;
 }
@@ -1194,14 +1198,14 @@ h1 {
     animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
   }
 }
-.teams .our-teams .teams-slides {
+.corporative-events-section .corporative-events-container .corporative-events-slides {
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
 }
-.teams .our-teams .team-slide {
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1223,61 +1227,61 @@ h1 {
     z-index: -1;
   }
 }
-.teams .our-teams .team-slide:nth-child(1) {
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(1) {
   animation-delay: 0s;
 }
-.teams .our-teams .team-slide:nth-child(1) .team-slide-bg {
-  background-image: url(../img/team_gerencia.JPG);
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(1) .corporative-events-slide-bg {
+  background-image: url("../img/team_gerencia.JPG");
 }
-.teams .our-teams .team-slide:nth-child(2) {
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(2) {
   animation-delay: 5s;
 }
-.teams .our-teams .team-slide:nth-child(2) .team-slide-bg {
-  background-image: url(../img/team-rrhh.JPG);
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(2) .corporative-events-slide-bg {
+  background-image: url("../img/team-rrhh.JPG");
 }
-.teams .our-teams .team-slide:nth-child(3) {
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(3) {
   animation-delay: 10s;
 }
-.teams .our-teams .team-slide:nth-child(3) .team-slide-bg {
-  background-image: url(../img/team-operaciones.JPG);
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(3) .corporative-events-slide-bg {
+  background-image: url("../img/team-operaciones.JPG");
 }
-.teams .our-teams .team-slide:nth-child(4) {
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(4) {
   animation-delay: 15s;
 }
-.teams .our-teams .team-slide:nth-child(4) .team-slide-bg {
-  background-image: url(../img/team-adminstracion.JPG);
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(4) .corporative-events-slide-bg {
+  background-image: url("../img/team-adminstracion.JPG");
 }
-.teams .our-teams .team-slide:nth-child(5) {
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(5) {
   animation-delay: 20s;
 }
-.teams .our-teams .team-slide:nth-child(5) .team-slide-bg {
-  background-image: url(../img/aboutUs.jpeg);
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(5) .corporative-events-slide-bg {
+  background-image: url("../img/aboutUs.jpeg");
 }
-.teams .our-teams .team-slide:nth-child(6) {
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(6) {
   animation-delay: 25s;
 }
-.teams .our-teams .team-slide:nth-child(6) .team-slide-bg {
-  background-image: url(../img/team-niubiz.JPG);
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(6) .corporative-events-slide-bg {
+  background-image: url("../img/team-niubiz.JPG");
 }
-.teams .our-teams .team-slide:nth-child(7) {
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(7) {
   animation-delay: 30s;
 }
-.teams .our-teams .team-slide:nth-child(7) .team-slide-bg {
-  background-image: url(../img/niubiz-regiones.JPG);
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(7) .corporative-events-slide-bg {
+  background-image: url("../img/niubiz-regiones.JPG");
 }
-.teams .our-teams .team-slide:nth-child(8) {
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(8) {
   animation-delay: 35s;
 }
-.teams .our-teams .team-slide:nth-child(8) .team-slide-bg {
-  background-image: url(../img/team-claro.JPG);
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(8) .corporative-events-slide-bg {
+  background-image: url("../img/team-claro.JPG");
 }
-.teams .our-teams .team-slide:nth-child(9) {
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(9) {
   animation-delay: 40s;
 }
-.teams .our-teams .team-slide:nth-child(9) .team-slide-bg {
-  background-image: url(../img/team-claro-supervisores.JPG);
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide:nth-child(9) .corporative-events-slide-bg {
+  background-image: url("../img/team-claro-supervisores.JPG");
 }
-.teams .our-teams .team-slide .team-slide-bg {
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide .corporative-events-slide-bg {
   position: relative;
   height: 100%;
   width: 100%;
@@ -1308,7 +1312,7 @@ h1 {
     transform: rotate(45deg) scale(0.9);
   }
 }
-.teams .our-teams .team-slide .team-slide-content {
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide .corporative-events-slide-content {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -1323,7 +1327,7 @@ h1 {
   border-radius: 0.5rem;
   width: fit-content;
 }
-.teams .our-teams .team-slide .team-slide-content span {
+.corporative-events-section .corporative-events-container .corporative-events-slides .corporative-events-slide .corporative-events-slide-content span {
   font-size: 1rem;
 }
 
@@ -1373,6 +1377,15 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-right: 1rem;
   }
+  .corporative-events-section h2 {
+    font-size: 2rem;
+  }
+  .corporative-events-section h2 .text-big {
+    font-size: 3rem;
+  }
+  .corporative-events-section .corporative-events-container {
+    height: 20rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .mission-vision {
@@ -1405,10 +1418,26 @@ h1 {
   .teams-carousel .swiper-teams .swiper-button-next {
     right: 1.5rem;
   }
+  .corporative-events-section {
+    flex-direction: column;
+  }
+  .corporative-events-section h2 {
+    font-size: 1.8rem;
+  }
+  .corporative-events-section h2 .text-big {
+    font-size: 2.2rem;
+  }
+  .corporative-events-section .corporative-events-container {
+    width: 100%;
+    height: 20rem;
+  }
 }
 @media only screen and (max-width: 425px) {
   .teams-carousel .swiper-teams {
     width: 65%;
+  }
+  .corporative-events-section .corporative-events-container {
+    height: 17rem;
   }
 }
 @media only screen and (max-width: 375px) {
