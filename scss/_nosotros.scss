@@ -27,7 +27,7 @@
   }
   .history {
     h2 {
-      color: mediumseagreen;
+      color: #00B373;
       font-size: 2rem;
     }
   }
@@ -44,7 +44,7 @@
     position: absolute;
     width: calc(100% - 15rem);
     height: 0.35rem;
-    background-color: mediumseagreen;
+    background-color: #00B373;
     top: 4.1rem;
     left: 8rem;
 
@@ -66,7 +66,7 @@
       align-items: center;
       gap: 1rem;
       .date {
-        border: solid 1px mediumseagreen;
+        border: solid 1px #00B373;
         border-radius: 1rem;
         width: fit-content;
         padding: 0.5rem 1rem;
@@ -74,7 +74,7 @@
       .time-mark-dot {
         width: 1.2rem;
         height: 1.2rem;
-        background-color: mediumseagreen;
+        background-color: #00B373;
         border-radius: 50%;
       }
     }
@@ -107,7 +107,7 @@
     left: calc(50% - 5rem);
     width: 10rem;
     height: 0.4rem;
-    background-color: mediumseagreen;
+    background-color: #00B373;
   }
   .mission-vision-card {
     display: flex;
@@ -118,7 +118,7 @@
       height: 5rem;
     }
     h4 {
-      color: mediumseagreen;
+      color: #00B373;
       font-size: 1.5rem;
     }
   }
@@ -128,7 +128,7 @@
   position: relative;
   margin-bottom: 4rem;
   h2 {
-    color: mediumseagreen;
+    color: #00B373;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 4rem;
@@ -169,7 +169,7 @@
       box-shadow: 0 0 20px #00000033;
     }
     .swiper-button-prev {
-      color: mediumseagreen;
+      color: #00B373;
       top: calc(50% + 2rem);
       left: 1.5rem;
       font-weight: bold;
@@ -179,7 +179,7 @@
       }
     }
     .swiper-button-next {
-      color: mediumseagreen;
+      color: #00B373;
       top: calc(50% + 2rem);
       right: 1.5rem;
       font-weight: bold;
@@ -207,7 +207,7 @@ $images: url(../img/team_gerencia.JPG) url(../img/team-rrhh.JPG)
   padding: 3rem;
   justify-content: space-between;
   align-items: center;
-  background-color: mediumseagreen;
+  background-color: #00B373;
   .teams-text {
     h2 {
       color: white;
@@ -247,7 +247,7 @@ $images: url(../img/team_gerencia.JPG) url(../img/team-rrhh.JPG)
         width: 100%;
         left: 50%;
         transform: translate3d(-50%, 0, 0);
-        background-color: mediumseagreen;
+        background-color: #00B373;
         pointer-events: auto;
       }
       &:before {

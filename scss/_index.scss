@@ -14,12 +14,12 @@ h1 {
     left: calc(50% - 5rem);
     width: 10rem;
     height: 0.4rem;
-    background-color: mediumseagreen;
+    background-color: #00B373;
   }
   .partners-section-title {
     text-align: center;
     padding-top: 1rem;
-    color: mediumseagreen;
+    color: #00B373;
     font-size: 2rem;
   }
   .partners-container {
@@ -56,7 +56,7 @@ h1 {
             padding: 0 1rem;
           }
           .btn-partner {
-            background-color: mediumseagreen;
+            background-color: #00B373;
             border: none;
             padding: 0.5rem 1rem;
             color: #fff;
@@ -76,7 +76,7 @@ h1 {
     }
     .swiper-pagination {
       .swiper-pagination-bullet-active {
-        background-color: mediumseagreen;
+        background-color: #00B373;
       }
       span {
         width: 0.8rem;
@@ -100,7 +100,7 @@ h1 {
     top: -3rem;
     width: 10rem;
     height: 0.4rem;
-    background-color: mediumseagreen;
+    background-color: #00B373;
   }
   .about-us-content {
     text-align: justify;
@@ -108,7 +108,7 @@ h1 {
     height: 100%;
     position: relative;
     h2 {
-      color: mediumseagreen;
+      color: #00B373;
       font-size: 2rem;
       margin-bottom: 2rem;
     }
@@ -117,7 +117,7 @@ h1 {
       text-align: justify;
     }
     .btn-aboutUs {
-      background-color: mediumseagreen;
+      background-color: #00B373;
       border: none;
       padding: 0.5rem 1rem;
       color: #fff;
@@ -213,12 +213,12 @@ h1 {
     .pin {
       width: 1rem;
       height: 1rem;
-      background-color: mediumseagreen;
+      background-color: #00B373;
       border-radius: 50%;
       position: absolute;
       &::before {
         content: "";
-        background: mediumseagreen;
+        background: #00B373;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -233,23 +233,23 @@ h1 {
       }
     }
     #P-LIMA {
-      top: 61%;
-      left: 37.5%;
+      top: 61.5%;
+      left: 39.5%;
     }
 
     #P-ICA {
-      top: 73.5%;
-      left: 41%;
+      top: 74%;
+      left: 43%;
     }
 
     #P-TRUJILLO {
       top: 43%;
-      left: 27.5%;
+      left: 32%;
     }
 
     #P-CHICLAYO {
-      top: 35%;
-      left: 23%;
+      top: 34%;
+      left: 28%;
     }
   }
 }
@@ -316,6 +316,110 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 1700px) {
+  .sedesLozamora {
+    .mapPeru {
+      #P-LIMA {
+        top: 62%;
+        left: 39%;
+      }
+
+      #P-ICA {
+        top: 75%;
+        left: 42%;
+      }
+
+      #P-TRUJILLO {
+        top: 43%;
+        left: 30.5%;
+      }
+
+      #P-CHICLAYO {
+        top: 34.5%;
+        left: 26%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .sedesLozamora {
+    .mapPeru {
+      #P-LIMA {
+        top: 62%;
+        left: 38%;
+      }
+
+      #P-ICA {
+        top: 75%;
+        left: 42%;
+      }
+
+      #P-TRUJILLO {
+        top: 43%;
+        left: 29.5%;
+      }
+
+      #P-CHICLAYO {
+        top: 34.5%;
+        left: 25%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .sedesLozamora {
+    .mapPeru {
+      #P-LIMA {
+        top: 62%;
+        left: 38%;
+      }
+
+      #P-ICA {
+        top: 75%;
+        left: 42%;
+      }
+
+      #P-TRUJILLO {
+        top: 42.5%;
+        left: 29%;
+      }
+
+      #P-CHICLAYO {
+        top: 34%;
+        left: 24%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .sedesLozamora {
+    .mapPeru {
+      #P-LIMA {
+        top: 62%;
+        left: 38%;
+      }
+
+      #P-ICA {
+        top: 75%;
+        left: 42%;
+      }
+
+      #P-TRUJILLO {
+        top: 43%;
+        left: 28%;
+      }
+
+      #P-CHICLAYO {
+        top: 34.5%;
+        left: 23%;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1440px) {
   .sedesLozamora {
     .mapPeru {
@@ -337,6 +441,84 @@ h1 {
       #P-CHICLAYO {
         top: 34.5%;
         left: 22%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .sedesLozamora {
+    .mapPeru {
+      #P-LIMA {
+        top: 62%;
+        left: 36.5%;
+      }
+
+      #P-ICA {
+        top: 75%;
+        left: 40%;
+      }
+
+      #P-TRUJILLO {
+        top: 43%;
+        left: 26.5%;
+      }
+
+      #P-CHICLAYO {
+        top: 34.5%;
+        left: 21%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .sedesLozamora {
+    .mapPeru {
+      #P-LIMA {
+        top: 62%;
+        left: 35.5%;
+      }
+
+      #P-ICA {
+        top: 75%;
+        left: 39.5%;
+      }
+
+      #P-TRUJILLO {
+        top: 43%;
+        left: 24.5%;
+      }
+
+      #P-CHICLAYO {
+        top: 34.5%;
+        left: 19%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .sedesLozamora {
+    .mapPeru {
+      #P-LIMA {
+        top: 62%;
+        left: 34%;
+      }
+
+      #P-ICA {
+        top: 75%;
+        left: 38.5%;
+      }
+
+      #P-TRUJILLO {
+        top: 43%;
+        left: 22%;
+      }
+
+      #P-CHICLAYO {
+        top: 34.5%;
+        left: 16%;
       }
     }
   }
@@ -406,6 +588,58 @@ h1 {
       #P-CHICLAYO {
         top: 34.5%;
         left: 33%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sedesLozamora {
+    .mapPeru {
+      #P-LIMA {
+        top: 62%;
+        left: 41%;
+      }
+
+      #P-ICA {
+        top: 75%;
+        left: 43%;
+      }
+
+      #P-TRUJILLO {
+        top: 43%;
+        left: 34%;
+      }
+
+      #P-CHICLAYO {
+        top: 34%;
+        left: 30.5%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .sedesLozamora {
+    .mapPeru {
+      #P-LIMA {
+        top: 62%;
+        left: 40%;
+      }
+
+      #P-ICA {
+        top: 75%;
+        left: 43%;
+      }
+
+      #P-TRUJILLO {
+        top: 43%;
+        left: 32%;
+      }
+
+      #P-CHICLAYO {
+        top: 34%;
+        left: 28%;
       }
     }
   }

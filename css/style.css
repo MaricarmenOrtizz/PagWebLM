@@ -48,19 +48,19 @@ header nav .menu .menu-item .menu-item-link.active {
 }
 header nav .menu #intranet-link {
   text-decoration: none;
-  background-color: mediumseagreen;
+  background-color: #00B373;
   padding: 0.5rem 2rem;
   margin: 0.5rem;
   color: white;
   border-radius: 1rem 0 1rem 0;
-  border-color: mediumseagreen;
+  border-color: #00B373;
   text-align: center;
   border: none;
   transition: all 0.5s ease;
   font-weight: 500;
 }
 header nav .menu #intranet-link:hover {
-  background-color: rgb(22, 149, 79);
+  background-color: #03a86e;
   box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5921568627);
 }
 header nav #btn-navbar {
@@ -81,7 +81,7 @@ header.sticking {
   background-color: rgb(0, 0, 0);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   header nav .logo-sm {
     display: block;
   }
@@ -180,12 +180,12 @@ h1 {
   left: calc(50% - 5rem);
   width: 10rem;
   height: 0.4rem;
-  background-color: mediumseagreen;
+  background-color: #00B373;
 }
 .partners-section .partners-section-title {
   text-align: center;
   padding-top: 1rem;
-  color: mediumseagreen;
+  color: #00B373;
   font-size: 2rem;
 }
 .partners-section .partners-container {
@@ -226,7 +226,7 @@ h1 {
   padding: 0 1rem;
 }
 .partners-section .partners-container .swiper-wrapper .partner-card .partner-content .btn-partner {
-  background-color: mediumseagreen;
+  background-color: #00B373;
   border: none;
   padding: 0.5rem 1rem;
   color: #fff;
@@ -242,7 +242,7 @@ h1 {
   cursor: pointer;
 }
 .partners-section .partners-container .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: mediumseagreen;
+  background-color: #00B373;
 }
 .partners-section .partners-container .swiper-pagination span {
   width: 0.8rem;
@@ -264,7 +264,7 @@ h1 {
   top: -3rem;
   width: 10rem;
   height: 0.4rem;
-  background-color: mediumseagreen;
+  background-color: #00B373;
 }
 .aboutUs .about-us-content {
   text-align: justify;
@@ -273,7 +273,7 @@ h1 {
   position: relative;
 }
 .aboutUs .about-us-content h2 {
-  color: mediumseagreen;
+  color: #00B373;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
@@ -282,7 +282,7 @@ h1 {
   text-align: justify;
 }
 .aboutUs .about-us-content .btn-aboutUs {
-  background-color: mediumseagreen;
+  background-color: #00B373;
   border: none;
   padding: 0.5rem 1rem;
   color: #fff;
@@ -375,13 +375,13 @@ h1 {
 .sedesLozamora .mapPeru .pin {
   width: 1rem;
   height: 1rem;
-  background-color: mediumseagreen;
+  background-color: #00B373;
   border-radius: 50%;
   position: absolute;
 }
 .sedesLozamora .mapPeru .pin::before {
   content: "";
-  background: mediumseagreen;
+  background: #00B373;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -395,20 +395,20 @@ h1 {
   cursor: pointer;
 }
 .sedesLozamora .mapPeru #P-LIMA {
-  top: 61%;
-  left: 37.5%;
+  top: 61.5%;
+  left: 39.5%;
 }
 .sedesLozamora .mapPeru #P-ICA {
-  top: 73.5%;
-  left: 41%;
+  top: 74%;
+  left: 43%;
 }
 .sedesLozamora .mapPeru #P-TRUJILLO {
   top: 43%;
-  left: 27.5%;
+  left: 32%;
 }
 .sedesLozamora .mapPeru #P-CHICLAYO {
-  top: 35%;
-  left: 23%;
+  top: 34%;
+  left: 28%;
 }
 
 @keyframes pulse {
@@ -472,6 +472,78 @@ h1 {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1700px) {
+  .sedesLozamora .mapPeru #P-LIMA {
+    top: 62%;
+    left: 39%;
+  }
+  .sedesLozamora .mapPeru #P-ICA {
+    top: 75%;
+    left: 42%;
+  }
+  .sedesLozamora .mapPeru #P-TRUJILLO {
+    top: 43%;
+    left: 30.5%;
+  }
+  .sedesLozamora .mapPeru #P-CHICLAYO {
+    top: 34.5%;
+    left: 26%;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .sedesLozamora .mapPeru #P-LIMA {
+    top: 62%;
+    left: 38%;
+  }
+  .sedesLozamora .mapPeru #P-ICA {
+    top: 75%;
+    left: 42%;
+  }
+  .sedesLozamora .mapPeru #P-TRUJILLO {
+    top: 43%;
+    left: 29.5%;
+  }
+  .sedesLozamora .mapPeru #P-CHICLAYO {
+    top: 34.5%;
+    left: 25%;
+  }
+}
+@media only screen and (max-width: 1550px) {
+  .sedesLozamora .mapPeru #P-LIMA {
+    top: 62%;
+    left: 38%;
+  }
+  .sedesLozamora .mapPeru #P-ICA {
+    top: 75%;
+    left: 42%;
+  }
+  .sedesLozamora .mapPeru #P-TRUJILLO {
+    top: 42.5%;
+    left: 29%;
+  }
+  .sedesLozamora .mapPeru #P-CHICLAYO {
+    top: 34%;
+    left: 24%;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .sedesLozamora .mapPeru #P-LIMA {
+    top: 62%;
+    left: 38%;
+  }
+  .sedesLozamora .mapPeru #P-ICA {
+    top: 75%;
+    left: 42%;
+  }
+  .sedesLozamora .mapPeru #P-TRUJILLO {
+    top: 43%;
+    left: 28%;
+  }
+  .sedesLozamora .mapPeru #P-CHICLAYO {
+    top: 34.5%;
+    left: 23%;
+  }
+}
 @media only screen and (max-width: 1440px) {
   .sedesLozamora .mapPeru #P-LIMA {
     top: 62%;
@@ -488,6 +560,60 @@ h1 {
   .sedesLozamora .mapPeru #P-CHICLAYO {
     top: 34.5%;
     left: 22%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .sedesLozamora .mapPeru #P-LIMA {
+    top: 62%;
+    left: 36.5%;
+  }
+  .sedesLozamora .mapPeru #P-ICA {
+    top: 75%;
+    left: 40%;
+  }
+  .sedesLozamora .mapPeru #P-TRUJILLO {
+    top: 43%;
+    left: 26.5%;
+  }
+  .sedesLozamora .mapPeru #P-CHICLAYO {
+    top: 34.5%;
+    left: 21%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .sedesLozamora .mapPeru #P-LIMA {
+    top: 62%;
+    left: 35.5%;
+  }
+  .sedesLozamora .mapPeru #P-ICA {
+    top: 75%;
+    left: 39.5%;
+  }
+  .sedesLozamora .mapPeru #P-TRUJILLO {
+    top: 43%;
+    left: 24.5%;
+  }
+  .sedesLozamora .mapPeru #P-CHICLAYO {
+    top: 34.5%;
+    left: 19%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .sedesLozamora .mapPeru #P-LIMA {
+    top: 62%;
+    left: 34%;
+  }
+  .sedesLozamora .mapPeru #P-ICA {
+    top: 75%;
+    left: 38.5%;
+  }
+  .sedesLozamora .mapPeru #P-TRUJILLO {
+    top: 43%;
+    left: 22%;
+  }
+  .sedesLozamora .mapPeru #P-CHICLAYO {
+    top: 34.5%;
+    left: 16%;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -544,6 +670,42 @@ h1 {
   .sedesLozamora .mapPeru #P-CHICLAYO {
     top: 34.5%;
     left: 33%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .sedesLozamora .mapPeru #P-LIMA {
+    top: 62%;
+    left: 41%;
+  }
+  .sedesLozamora .mapPeru #P-ICA {
+    top: 75%;
+    left: 43%;
+  }
+  .sedesLozamora .mapPeru #P-TRUJILLO {
+    top: 43%;
+    left: 34%;
+  }
+  .sedesLozamora .mapPeru #P-CHICLAYO {
+    top: 34%;
+    left: 30.5%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .sedesLozamora .mapPeru #P-LIMA {
+    top: 62%;
+    left: 40%;
+  }
+  .sedesLozamora .mapPeru #P-ICA {
+    top: 75%;
+    left: 43%;
+  }
+  .sedesLozamora .mapPeru #P-TRUJILLO {
+    top: 43%;
+    left: 32%;
+  }
+  .sedesLozamora .mapPeru #P-CHICLAYO {
+    top: 34%;
+    left: 28%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -757,7 +919,7 @@ h1 {
   transform: scale(1.1);
 }
 .introduction-section .history h2 {
-  color: mediumseagreen;
+  color: #00B373;
   font-size: 2rem;
 }
 
@@ -773,7 +935,7 @@ h1 {
   position: absolute;
   width: calc(100% - 15rem);
   height: 0.35rem;
-  background-color: mediumseagreen;
+  background-color: #00B373;
   top: 4.1rem;
   left: 8rem;
   animation: moveline 6s infinite forwards;
@@ -796,7 +958,7 @@ h1 {
   gap: 1rem;
 }
 .time-line .container .container-time-mark .date {
-  border: solid 1px mediumseagreen;
+  border: solid 1px #00B373;
   border-radius: 1rem;
   width: fit-content;
   padding: 0.5rem 1rem;
@@ -804,7 +966,7 @@ h1 {
 .time-line .container .container-time-mark .time-mark-dot {
   width: 1.2rem;
   height: 1.2rem;
-  background-color: mediumseagreen;
+  background-color: #00B373;
   border-radius: 50%;
 }
 .time-line .container .container-time-text {
@@ -835,7 +997,7 @@ h1 {
   left: calc(50% - 5rem);
   width: 10rem;
   height: 0.4rem;
-  background-color: mediumseagreen;
+  background-color: #00B373;
 }
 .mission-vision .mission-vision-card {
   display: flex;
@@ -847,7 +1009,7 @@ h1 {
   height: 5rem;
 }
 .mission-vision .mission-vision-card h4 {
-  color: mediumseagreen;
+  color: #00B373;
   font-size: 1.5rem;
 }
 
@@ -856,7 +1018,7 @@ h1 {
   margin-bottom: 4rem;
 }
 .teams-carousel h2 {
-  color: mediumseagreen;
+  color: #00B373;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 4rem;
@@ -898,7 +1060,7 @@ h1 {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .teams-carousel .swiper-teams .swiper-button-prev {
-  color: mediumseagreen;
+  color: #00B373;
   top: calc(50% + 2rem);
   left: 1.5rem;
   font-weight: bold;
@@ -908,7 +1070,7 @@ h1 {
   transform: scale(1.1);
 }
 .teams-carousel .swiper-teams .swiper-button-next {
-  color: mediumseagreen;
+  color: #00B373;
   top: calc(50% + 2rem);
   right: 1.5rem;
   font-weight: bold;
@@ -923,7 +1085,7 @@ h1 {
   padding: 3rem;
   justify-content: space-between;
   align-items: center;
-  background-color: mediumseagreen;
+  background-color: #00B373;
 }
 .teams .teams-text h2 {
   color: white;
@@ -961,7 +1123,7 @@ h1 {
   width: 100%;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
-  background-color: mediumseagreen;
+  background-color: #00B373;
   pointer-events: auto;
 }
 .teams .our-teams .teams-shutters:before {
@@ -1199,7 +1361,7 @@ h1 {
 .slider__navi a.active {
   height: 0.9rem;
   width: 0.9rem;
-  background: mediumseagreen;
+  background: #00B373;
 }
 
 .flex__container {
@@ -1397,7 +1559,7 @@ h1 {
 .services-benefits .benefits-info {
   width: 60%;
   height: 100%;
-  background-color: mediumseagreen;
+  background-color: #00B373;
   padding: 3rem;
 }
 .services-benefits .benefits-info.left {
@@ -1429,7 +1591,7 @@ h1 {
   color: #000;
 }
 .services-benefits .clients-carousel.left h2 {
-  color: mediumseagreen;
+  color: #00B373;
 }
 .services-benefits .clients-carousel .swiper-wrapper {
   margin-bottom: 2.5rem;
@@ -1450,7 +1612,7 @@ h1 {
   border-radius: 1rem;
 }
 .services-benefits .clients-carousel .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: mediumseagreen;
+  background-color: #00B373;
 }
 .services-benefits .clients-carousel .swiper-pagination span {
   width: 0.8rem;
@@ -1461,7 +1623,7 @@ h1 {
   padding: 0 3rem;
 }
 .main-clients-section h2 {
-  color: mediumseagreen;
+  color: #00B373;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 4rem;
@@ -1500,7 +1662,7 @@ h1 {
   border-radius: 1rem;
 }
 .main-clients-section .clients-container .clients-carousel .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: mediumseagreen;
+  background-color: #00B373;
 }
 .main-clients-section .clients-container .clients-carousel .swiper-pagination span {
   width: 0.8rem;
@@ -1538,12 +1700,13 @@ h1 {
 }
 
 .job-oportunities-section {
-  padding: 0 3rem;
+  padding: 2rem;
+  background-color: black;
 }
 .job-oportunities-section h2 {
   text-align: center;
-  margin-bottom: 4rem;
-  color: mediumseagreen;
+  margin-bottom: 2rem;
+  color: #ffffff;
 }
 .job-oportunities-section .job-oportunities-carousel {
   width: 100%;
@@ -1552,27 +1715,20 @@ h1 {
   margin-bottom: 2.5rem;
 }
 .job-oportunities-section .job-oportunities-carousel .swiper-wrapper .job-oportunities-card {
-  background-color: #fff;
-  border: solid 1px mediumseagreen;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  padding: 2rem;
-  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.job-oportunities-section .job-oportunities-carousel .swiper-wrapper .job-oportunities-card h4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-  color: mediumseagreen;
-}
-.job-oportunities-section .job-oportunities-carousel .swiper-wrapper .job-oportunities-card p {
-  text-align: justify;
+.job-oportunities-section .job-oportunities-carousel .swiper-wrapper .job-oportunities-card img {
+  height: 25rem;
 }
 .job-oportunities-section .job-oportunities-carousel .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: mediumseagreen;
+  background-color: #00b373;
 }
 .job-oportunities-section .job-oportunities-carousel .swiper-pagination span {
   width: 0.8rem;
   height: 0.8rem;
+  background-color: white;
 }
 
 .redirect-to-application {
@@ -1582,7 +1738,7 @@ h1 {
   text-align: center;
 }
 .redirect-to-application #btn-application {
-  background-color: mediumseagreen;
+  background-color: #00b373;
   border: none;
   padding: 1rem 3rem;
   border-radius: 1rem;
@@ -1628,7 +1784,7 @@ footer .footer-content li .icon-box {
   text-align: center;
 }
 footer .footer-content li .icon-box i {
-  color: mediumseagreen;
+  color: #00B373;
   font-size: 1.7rem;
   text-align: center;
   width: 2rem;
@@ -1673,7 +1829,7 @@ footer .footer-copyright .social-media li a i {
   font-size: 1.7rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   footer .footer-content {
     width: 100%;
     margin-top: 2.5rem;

@@ -41,18 +41,18 @@ header {
       }
       #intranet-link {
         text-decoration: none;
-        background-color: mediumseagreen;
+        background-color: #00B373;
         padding: 0.5rem 2rem;
         margin: 0.5rem;
         color: white;
         border-radius: 1rem 0 1rem 0;
-        border-color: mediumseagreen;
+        border-color: #00B373;
         text-align: center;
         border: none;
         transition: all 0.5s ease;
         font-weight: 500;
         &:hover {
-          background-color: rgb(22, 149, 79);
+          background-color: #03a86e;
           box-shadow: 0 0 1rem #ffffff97;
         }
       }
@@ -77,7 +77,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   header {
     nav {
       .logo-sm {
