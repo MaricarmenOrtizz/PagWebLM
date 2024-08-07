@@ -1770,56 +1770,26 @@ h1 {
   height: 0.8rem;
 }
 
-.main-clients-section {
-  padding: 0 3rem;
+@media only screen and (max-width: 900px) {
+  .services-benefits {
+    flex-direction: column;
+    align-items: start;
+    height: fit-content;
+  }
+  .services-benefits.right {
+    flex-direction: column;
+  }
+  .services-benefits .benefits-info {
+    width: 90%;
+  }
+  .services-benefits .benefits-info.right {
+    align-self: end;
+  }
+  .services-benefits .clients-carousel {
+    align-self: center;
+    width: 60%;
+  }
 }
-.main-clients-section h2 {
-  color: #00B373;
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-.main-clients-section .clients-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 3rem;
-}
-.main-clients-section .clients-container h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  width: 20%;
-}
-.main-clients-section .clients-container .clients-carousel {
-  width: 80%;
-  margin: 0;
-}
-.main-clients-section .clients-container .clients-carousel .swiper-wrapper {
-  margin-bottom: 2.5rem;
-}
-.main-clients-section .clients-container .clients-carousel .swiper-wrapper .client-card {
-  width: 33.3333333333%;
-  height: 10rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  border-radius: 1rem;
-  position: relative;
-  margin-bottom: 1rem;
-}
-.main-clients-section .clients-container .clients-carousel .swiper-wrapper .client-card img {
-  height: 10rem;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 1rem;
-}
-.main-clients-section .clients-container .clients-carousel .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #00B373;
-}
-.main-clients-section .clients-container .clients-carousel .swiper-pagination span {
-  width: 0.8rem;
-  height: 0.8rem;
-}
-
 .vacantes-group {
   position: relative;
   background-color: aqua;
