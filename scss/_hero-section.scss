@@ -10,8 +10,10 @@
   transition: all 0.5s ease;
   color: #fff;
   &.index {
-    background-image: url("../img/about-us.png");
     animation: banner-index 5s infinite linear;
+  }
+  &.job-oportunities{
+    animation: banner-job-oportunities 5s infinite linear;
   }
   .shadow {
     background-color: #00000097;
@@ -32,16 +34,34 @@
 
 @keyframes banner-index {
   0% {
-    background-image: url("../img/aboutUs.jpeg");
+    background-image: url("../img//events/dia-trabajo.jpg");
   }
   25% {
-    background-image: url("../img/aboutUs.jpeg");
+    background-image: url("../img/niubizRegiones.png");
   }
   26% {
-    background-image: url("../img/presencia.jpg");
+    background-image: url("../img/niubiz-regiones.JPG");
   }
   75% {
-    background-image: url("../img/presencia.jpg");
+    background-image: url("../img/niubiz-regiones.JPG");
+  }
+  76% {
+    background-image: url("../img/niubizRegiones.png");
+  }
+}
+
+@keyframes banner-job-oportunities {
+  0% {
+    background-image: url("../img//events/dia-trabajo.jpg");
+  }
+  25% {
+    background-image: url("../img/niubizRegiones.png");
+  }
+  26% {
+    background-image: url("../img/niubiz-regiones.JPG");
+  }
+  75% {
+    background-image: url("../img/team-operaciones.JPG");
   }
   76% {
     background-image: url("../img/niubizRegiones.png");

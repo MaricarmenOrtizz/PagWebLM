@@ -85,3 +85,57 @@
     }
   }
 }
+
+
+
+//----------------------------SECTION OPINION WORK--------------------------
+.opinion-work{
+  background-color: #00b373;
+  .tittle-opinion{
+    color:rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .opinion-work-content{
+  padding: 3rem;
+  width: 85%;
+  margin: auto;
+
+ 
+    
+  }
+  
+    .opinion{
+      display: flex;
+     
+      padding-bottom: 3rem;
+      &.rigth{
+        flex-direction: row-reverse;
+      }
+      .opinion-text{display: flex;
+      flex-direction: column;
+      width: 70%;
+      p{
+        color: white;
+
+      }
+      
+    }
+    .photo-perfil{
+      width: 30%;
+      text-align: center;
+      img{
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    }
+
+   
+  }
