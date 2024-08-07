@@ -364,8 +364,8 @@ h1 {
 }
 .sedesLozamora .mapPeru path {
   fill: rgba(255, 255, 255, 0.5333333333);
-  stroke: #6b6b6b;
-  stroke-width: 0.5px;
+  stroke: #a3a3a3;
+  stroke-width: 2px;
   cursor: pointer;
   transition: fill 0.5s;
 }
