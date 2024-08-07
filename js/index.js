@@ -19,6 +19,9 @@ let carouselPartners = new Swiper(".swiper-partners", {
   },
   breakpoints: {
     769: {
+      slidesPerView: 2,
+    },
+    1301: {
       slidesPerView: 3,
     }
   }
