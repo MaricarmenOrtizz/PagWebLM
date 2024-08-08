@@ -1757,7 +1757,7 @@ h1 {
   margin-bottom: 1rem;
 }
 .services-benefits .clients-carousel .swiper-wrapper .client-card img {
-  height: 18rem;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 1rem;
@@ -1774,6 +1774,7 @@ h1 {
   .services-benefits {
     flex-direction: column;
     align-items: start;
+    gap: 2rem;
     height: fit-content;
   }
   .services-benefits.right {
@@ -1788,6 +1789,37 @@ h1 {
   .services-benefits .clients-carousel {
     align-self: center;
     width: 60%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .services-benefits .benefits-info {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .services-benefits .benefits-info.left {
+    border-radius: 0;
+  }
+  .services-benefits .benefits-info.right {
+    border-radius: 0;
+    align-self: center;
+  }
+  .services-benefits .clients-carousel {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .services-benefits .clients-carousel .swiper-wrapper .client-card {
+    height: 14rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .services-benefits .clients-carousel .swiper-wrapper .client-card {
+    height: 12rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .services-benefits .clients-carousel .swiper-wrapper .client-card {
+    height: 10rem;
   }
 }
 .vacantes-group {
