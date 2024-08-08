@@ -1841,36 +1841,6 @@ h1 {
     height: 10rem;
   }
 }
-.vacantes-group {
-  position: relative;
-  background-color: aqua;
-  display: flex;
-  flex-direction: column;
-  padding: 3rem;
-}
-.vacantes-group .vacantes-tittle h2 {
-  color: black;
-  text-align: center;
-}
-.vacantes-group .vacantes {
-  background-color: rebeccapurple;
-  display: flex;
-  justify-content: space-between;
-}
-.vacantes-group .vacantes .vacante {
-  background-color: violet;
-  width: 15rem;
-  padding: 1rem;
-}
-.vacantes-group .vacantes .vacante img {
-  height: 10rem;
-  width: 100%;
-}
-.vacantes-group .vacantes .vacante p {
-  font-weight: 100;
-  font-size: 1rem;
-}
-
 .job-oportunities-section {
   padding: 2rem;
   background-color: black;
