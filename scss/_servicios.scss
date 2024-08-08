@@ -65,18 +65,7 @@
   top: 0;
   left: 0;
   display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  -webkit-flex-flow: row wrap;
-  -moz-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  -o-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-justify-content: flex-start;
-  -moz-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  -o-justify-content: flex-start;
   justify-content: flex-start;
   height: 100%;
   width: 100%;
@@ -110,24 +99,6 @@
         line-height: 2;
       }
     }
-    .text__background {
-      position: absolute;
-      left: 72px;
-      bottom: -60px;
-      color: rgba(0, 0, 0, 0.05);
-      font-size: 170px;
-      font-weight: 700;
-    }
-    .pokemon__img {
-      position: absolute;
-      bottom: 20px;
-      right: 15%;
-      max-height: 40vw;
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-      transition: opacity 0.43s 0.6s,
-        transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
-    }
   }
   .flex__item--left {
     display: flex;
@@ -151,6 +122,16 @@
     transform-origin: right center;
     transition: transform 0.1s linear 0s;
     opacity: 0;
+    .item-shadow {
+      background: linear-gradient(
+        rgb(60, 60, 60),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      );
+      height: 100%;
+    }
   }
 }
 
@@ -189,17 +170,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.flex__item--right .item-shadow {
-  background: linear-gradient(
-    rgb(60, 60, 60),
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0)
-  );
-  height: 100%;
 }
 
 /* Blaziken */
@@ -368,7 +338,53 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .slider__navi {
+    top: 31.25%;
+  }
+
+  .flex__container {
+    flex-flow: unset;
+    flex-direction: column;
+    .flex__item {
+      .flex__content {
+        margin-right: 3rem;
+        width: 100%;
+      }
+    }
+    .flex__item--left {
+      width: 100%;
+      padding: 6rem 0 2rem 0;
+      height: 50vh;
+    }
+    .flex__item--right {
+      width: 100%;
+      height: 30vh;
+      .item-shadow {
+        display: none;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 576px) {
+  .slider__navi {
+    left: 1.5rem;
+  }
+
+  .flex__container {
+    .flex__item {
+      .flex__content {
+        margin-left: 4.5rem;
+        margin-right: 1.5rem;
+        width: 100%;
+        .text--big {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
   .services-benefits {
     .benefits-info {
       width: 100%;
@@ -400,6 +416,15 @@
 }
 
 @media only screen and (max-width: 375px) {
+  .flex__container {
+    .flex__item--left {
+      height: 55vh;
+    }
+    .flex__item--right {
+      height: 25vh;
+    }
+  }
+
   .services-benefits {
     .clients-carousel {
       .swiper-wrapper {
