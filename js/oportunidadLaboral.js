@@ -3,8 +3,7 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 /*---JOB OPORTUNITIES---*/
 
 let carouselHiring = new Swiper(".swiper-job-oportunities", {
-  slidesPerView: 2,
-  spaceBetween: 20,
+  slidesPerView: 1,
   grabCursor: true,
   loop: true,
   autoplay: {
@@ -16,4 +15,9 @@ let carouselHiring = new Swiper(".swiper-job-oportunities", {
     clickable: true,
     dynamicBullets: true,
   },
+  breakpoints:{
+    769:{
+      slidesPerView: 2
+    }
+  }
 });
